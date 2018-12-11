@@ -1,0 +1,72 @@
+{
+  "rabbit_version": "3.6.12",
+  "users": [
+    {
+      "name": "admin",
+      "password_hash": "CvyZFQry60/nBhEjJvugmK+zD5dEJtg06sq+2HxNEMsmjcTp",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    },
+    {
+      "name": "ingestionservice",
+      "password_hash": "U9EgMe4K2u0W/OrjH5Nyn4332euNNPvm6hBB6pT0hQ9YfHVd",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": ""
+    },
+    {
+      "name": "portal",
+      "password_hash": "YAOe6zCfWqkqUho14xmwHL28GwnfEqYDTyWjTCpjyztf1c7M",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": ""
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "admin",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "ingestionservice",
+      "vhost": "/",
+      "configure": "",
+      "write": "data_exchange",
+      "read": ""
+    },
+    {
+      "user": "portal",
+      "vhost": "/",
+      "configure": "^.*data$",
+      "write": "^.*data$",
+      "read": "^(data_exchange$|.*data)$"
+    }
+  ],
+  "parameters": [],
+  "global_parameters": [
+    {
+      "name": "cluster_name",
+      "value": "rabbit@tigerrabbitmq"
+    }
+  ],
+  "policies": [],
+  "queues": [],
+  "exchanges": [
+    {
+      "name": "data_exchange",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": []
+}

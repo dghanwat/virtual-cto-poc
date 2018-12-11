@@ -1,0 +1,18 @@
+version: '3'
+
+networks:
+  devnetwork:
+    driver: bridge
+
+services:
+ rabbitmq:
+  build: 
+    context: ./docker/rabbitmq
+  ports:
+    - "5672:5672"
+    - "15672:15672"
+  networks:
+    - devnetwork     
+  volumes:
+    - /opt/rabbitmq:/var/lib/rabbitmq       
+ 
