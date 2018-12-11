@@ -1,0 +1,3 @@
+/docker/chatterbot-engine/app/*.sqlite3
+/docker/chatterbot-engine/app/rabbitmq/__pycache__
+/.vscode

@@ -20,6 +20,11 @@ services:
     - devnetwork     
   volumes:
     - /opt/rabbitmq:/var/lib/rabbitmq
+ chatterbot-engine:
+  build:
+    context: ./docker/chatterbot-engine
+  networks:
+    - devnetwork  
  db-mongo:
   image: mongo:latest
   ports:
