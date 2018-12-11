@@ -1,3 +1,5 @@
 /docker/chatterbot-engine/app/*.sqlite3
 /docker/chatterbot-engine/app/rabbitmq/__pycache__
 /.vscode
+/docker/chatterbot-engine/app/mongodb/__pycache__
+/docker/chatterbot-engine/*.sqlite3

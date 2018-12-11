@@ -14,7 +14,7 @@ class Publisher:
             channel.exchange_declare(exchange=os.environ['RABBITMQ_EXCHANGE'],
                                          passive=True)
             channel.basic_publish(exchange=os.environ['RABBITMQ_EXCHANGE'],
-                                      routing_key="message",
+                                      routing_key="",
                                       properties=pika.BasicProperties(correlation_id = correlation_id),
                                       body=message)
  

@@ -56,7 +56,15 @@
     }
   ],
   "policies": [],
-  "queues": [],
+  "queues": [
+    {
+      "name": "bot_request_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
   "exchanges": [
     {
       "name": "data_exchange",
@@ -75,7 +83,25 @@
       "auto_delete": false,
       "internal": false,
       "arguments": {}
+    },
+    {
+      "name": "bot_request_exchange",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
     }
   ],
-  "bindings": []
+  "bindings": [
+    {
+      "source": "bot_request_exchange",
+      "vhost": "/",
+      "destination": "bot_request_queue",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": {}
+    }
+  ]
 }

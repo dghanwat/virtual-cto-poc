@@ -11,6 +11,7 @@ RUN apk update && apk add python py2-pip
 RUN pip install pip --upgrade --user
 RUN pip install chatterbot
 RUN pip install pika
+RUN pip install pymongo
 
 # Create a user to run the app
 RUN addgroup -S virtual_cto && adduser -S virtual_cto -G virtual_cto
@@ -23,6 +24,12 @@ ENV RABBITMQ_SERVER=192.168.99.100
 ENV RABBITMQ_PORT=5672
 ENV RABBITMQ_EXCHANGE=bot_response_exchange
 ENV RABBITMQ_VIRTUALHOST=/
+ENV RABBITMQ_BOT_INCOMING_QUEUE=bot_request_queue
+ENV MONGODB_SERVER=192.168.99.100
+ENV MONGODB_USER=devroot
+ENV MONGODB_PASSWORD=devroot
+ENV MONGODB_PORT=27017
+
 
 
 WORKDIR ${APP_HOME}
