@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Training Data</h1>
+        </div>
+        <div class="col-md-6 pull-right">
+            <button type="button" (click)="addQnARow()" class="btn vd_btn vd_round-btn btn-lg vd_bg-body-color mgr-10 pull-right">
+                <i class="fa fa-plus"></i>
+            </button>
+            <button type="button" (click)="startTraining()" class="btn vd_btn vd_round-btn btn-lg vd_bg-body-color mgr-10 pull-right">
+                <i class="fa fa-settings"></i>
+            </button>
+        </div>
+    </div>
+    <form [formGroup]="qnaForm">
+
+        <div formArrayName="qna">
+            <div *ngFor="let item of qnaRow.controls; let pointIndex=index" [formGroupName]="pointIndex" class="input-group">
+                <input type="text" class="form-control input-sm" formControlName="question" placeholder="Question" required />
+                <span class="input-group-btn" style="width:5px;"></span>
+                <input type="text" class="form-control input-sm" placeholder="Answer" style="margin-left:-1px"
+                    formControlName="answer" />
+                <span class="input-group-btn" style="width:5px;"></span>
+                <button type="button" (click)="save(pointIndex)" class="btn vd_btn vd_round-btn btn-sm vd_bg-body-color mgr-10 pull-right">
+                    <i class="fa fa-save"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- <form [formGroup]="productForm">
+
+    <div formArrayName="selling_points">
+        <div *ngFor="let item of sellingPoints.controls; let pointIndex=index" [formGroupName]="pointIndex">
+            <label>
+                Selling Point: <input formControlName="point" />
+            </label>
+            <button type="button" (click)="deleteSellingPoint(pointIndex)">Delete Selling Point</button>
+        </div>
+
+    </div>
+
+</form> -->
+
+{{ this.qnaForm.value | json }}

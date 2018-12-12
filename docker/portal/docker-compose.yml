@@ -1,0 +1,17 @@
+version: '3'
+
+networks:
+  devnetwork:
+    driver: bridge
+
+services:
+ portal:
+  build: 
+    context: .
+  environment:
+    - ENVIRONMENT=prod
+  ports:
+    - "3000:3000"    
+  networks:
+    - devnetwork        
+ 

@@ -1,0 +1,5 @@
+# Exclude all files except the dist folder and package.json
+*
+!package.json
+!dist
+!python

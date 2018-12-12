@@ -23,6 +23,35 @@ services:
  chatterbot-engine:
   build:
     context: ./docker/chatterbot-engine
+  environment:
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - RABBITMQ_EXCHANGE=bot_response_exchange
+    - RABBITMQ_VIRTUALHOST=/
+    - RABBITMQ_BOT_INCOMING_QUEUE=bot_request_queue
+    - MONGODB_SERVER=db-mongo
+    - MONGODB_USER=devroot
+    - MONGODB_PASSWORD=devroot
+    - MONGODB_PORT=27017
+  networks:
+    - devnetwork  
+ ingestion-service:
+  build:
+    context: ./docker/ingestion-service
+  environment:
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - RABBITMQ_EXCHANGE=ingestion_exchange
+    - RABBITMQ_VIRTUALHOST=/
+    - RABBITMQ_BOT_INCOMING_QUEUE=ingestion_queue
+    - MONGODB_SERVER=db-mongo
+    - MONGODB_USER=devroot
+    - MONGODB_PASSWORD=devroot
+    - MONGODB_PORT=27017
   networks:
     - devnetwork  
  db-mongo:

@@ -12,11 +12,14 @@ RUN pip install pip --upgrade --user
 RUN pip install chatterbot
 RUN pip install pika
 RUN pip install pymongo
+RUN apk add --no-cache bash
+
 
 # Create a user to run the app
 RUN addgroup -S virtual_cto && adduser -S virtual_cto -G virtual_cto
 
-ADD --chown=virtual_cto:virtual_cto app ${APP_HOME}app/
+ADD --chown=virtual_cto:virtual_cto ./app/ ${APP_HOME}app/
+RUN ls -ltr ${APP_HOME}/app
 
 ENV RABBITMQ_USER=admin
 ENV RABBITMQ_PASSWORD=rabbitmqadmin
@@ -32,9 +35,8 @@ ENV MONGODB_PORT=27017
 
 
 
-WORKDIR ${APP_HOME}
+WORKDIR ${APP_HOME}app/
 
 # USER virtual_cto
 
-CMD python ${APP_HOME}app/hello.py
-
+CMD python main.py

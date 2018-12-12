@@ -17,7 +17,9 @@ class Consumer:
  
  
         channel.basic_consume(self._consume_message, queue=os.environ['RABBITMQ_BOT_INCOMING_QUEUE'])
+        print("Started Message Consumption")
         channel.start_consuming()
+        
  
     
     def _create_connection(self):
@@ -27,5 +29,5 @@ class Consumer:
         return pika.BlockingConnection(parameters)
  
     def _consume_message(self, channel, method, properties, body):
-        self.message_received_callback(channel, method, properties, body)
         channel.basic_ack(delivery_tag=method.delivery_tag)
+        self.message_received_callback(channel, method, properties, body)
