@@ -12,6 +12,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 DEFAULT_RESPONSE = 'I am sorry, but I am not aware of this. I am still learning.'
+THRESHOLD = 0.80
 publisher = Publisher()
 chatbot = ChatBot('Terminal',
                   storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
@@ -21,11 +22,6 @@ chatbot = ChatBot('Terminal',
                       },
                       {
                           'import_path': 'chatterbot.logic.MathematicalEvaluation'
-                      },
-                      {
-                          'import_path': 'chatterbot.logic.LowConfidenceAdapter',
-                          'threshold': 0.65,
-                          'default_response': DEFAULT_RESPONSE
                       }
                   ],
                   database='bot_database',
@@ -58,8 +54,12 @@ def handleRabbitMQMessage(ch, method, properties, body):
     elif incomingMessage["messageType"] == "chat":
         try:
             chatResponse = chatbot.get_response(incomingMessage["message"],properties.correlation_id)
-            print("Confidence " , chatResponse.confidence)
-            json_response = json.dumps({'response': chatResponse.serialize(), 'confidence': chatResponse.confidence})
+            confidence = chatResponse.confidence
+            print("Confidence " , confidence)
+            if confidence > THRESHOLD:
+                json_response = json.dumps({'response': chatResponse.serialize(), 'confidence': confidence})
+            else: 
+                json_response = json.dumps({'response': {"text": DEFAULT_RESPONSE, "in_response_to": [], "extra_data": {}}, 'confidence': 0})
         except IndexError:
             json_response = json.dumps({'response': {"text": DEFAULT_RESPONSE, "in_response_to": [], "extra_data": {}}, 'confidence': 0})
        

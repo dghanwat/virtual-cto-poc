@@ -14,12 +14,12 @@ export default class TrainingCtrl {
     }
 
     appendQuestionAndAnswersSet = (req, res) => {
-        console.log("adding question anser",req.body)
+        console.log("adding question anser", req.body)
         let input = {
             "messageType": "create_kb_item",
             "kbItems": req.body
-          }
-        console.log("Creating new KB Item" ,input)  
+        }
+        console.log("Creating new KB Item", input)
         let id = this.randomid();
         this.rabbitMQ._rabbit.publish(OUTGOING_EXCHANGE, {
             correlationId: id,
@@ -38,4 +38,3 @@ export default class TrainingCtrl {
 
 
 
-}

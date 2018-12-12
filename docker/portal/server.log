@@ -7986,3 +7986,21 @@ Error: Route.post() requires a callback function but got a [object Undefined]
 [INFO] - [2018-12-12T12:04:37.249Z] : RabbitMq: Connection virtualctorabbitmq opened
 [INFO] - [2018-12-12T12:04:46.067Z] : RabbitMq: Portal connected
 [INFO] - [2018-12-12T12:04:46.069Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T12:09:57.833Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T12:09:57.835Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T14:15:12.443Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T14:15:12.448Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T14:15:19.760Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T14:15:19.763Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T14:32:45.287Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T14:32:45.289Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T14:32:50.134Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T14:32:50.137Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T14:33:42.612Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T14:33:42.614Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T14:35:33.928Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T14:35:33.930Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T14:37:00.917Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T14:37:00.924Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-12T16:09:06.957Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-12T16:09:06.961Z] : RabbitMq: Connection virtualctorabbitmq opened

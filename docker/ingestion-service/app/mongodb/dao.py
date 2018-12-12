@@ -12,15 +12,18 @@ class MongoDBDAO:
         if "knowledge_base" in dblist:
            print("The database exists.")
            self.db = self.client["knowledge_base"]
+           print("Self db is ",self.db)
         else:
            self.db = self.client["knowledge_base"]
 
+        print("Checking for Collections")
         cols = self.db.list_collection_names()
 
         if "kb_items" in cols:
             print("The collection exists.")
             self.collection = self.db["kb_items"]
         else:
+            print("The collection does not exists .")
             self.collection = self.db["kb_items"]
 
     

@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
   BOT: string = "BOT";
   HUMAN: string = "HUMAN";
   asyncMesgId:any;
+  THRESHOLD:number = 0.65;
 
   constructor(private botService: AngularAutobotService,
     private chatService: ChatService,
@@ -97,6 +98,10 @@ export class HomeComponent implements OnInit {
               // Once we get the Response from the server 
               this.doneLoading(botId, asyncMesgId, 1);
               this.updateContent(botId, asyncMesgId, res.message.content, 1);
+              if(res.message.confidence < this.THRESHOLD) {
+                this.showWelcomeMessages('<a href="/human" target="_blank">Click here to speak to a real person</a>', this.BOT);
+                this.showWelcomeMessages('I promise, I would have learnt the response when you come here next time', this.BOT);
+              }
               this.askTextInputQuestion(botId, 1);
               setTimeout(() => {
                 let inputField = <NodeListOf<HTMLElement>>document.querySelectorAll('.botui-actions-text-input');

@@ -24,10 +24,12 @@ export default class ChatCtrl {
             console.log("Message in the queue is ", msg)
             let chatResponse: ChatResponse = new ChatResponse();
             chatResponse.type = CHAT_RESPONSE_TYPES.TEXT;
-            console.log('msg.response.text', msg.response.text);
+            
             if (msg.response.text) {
                 chatResponse.content = msg.response.text;
+                chatResponse.confidence = msg.confidence
             }
+            console.log('msg.response.text', chatResponse);
             res.setHeader('Content-Type', 'application/json');
             res.status(200).send({ message: chatResponse })
 

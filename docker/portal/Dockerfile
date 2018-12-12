@@ -22,14 +22,8 @@ RUN groupadd -r portal_user -g 3001 && \
 
 # Add the build dist folder and package.json (for npm resolution)
 ADD --chown=portal_user:portal_user dist ${APP_HOME}dist/
-ADD --chown=portal_user:portal_user python ${APP_HOME}python/
 ADD --chown=portal_user:portal_user package.json ${APP_HOME}
-
-# FROM python:3
-# RUN yum -y install epel-release && yum clean all
-RUN yum -y install python-pip && yum clean all
-RUN pip install --upgrade pip
-RUN pip install chatterbot
+ADD --chown=portal_user:portal_user package-lock.json ${APP_HOME}
 
 
 EXPOSE 3000
@@ -39,10 +33,7 @@ ENV KEEP_WSS_CONNECTION_ALIVE=5000
 ENV ENVIRONMENT=localdocker
 
 WORKDIR ${APP_HOME}
+RUN npm install --registry=https://registry.npmjs.com/ --no-optional --verbonse
 
 USER portal_user
-
-RUN npm install --no-optional
-
-
 CMD node ${APP_HOME}dist/server/app.js
