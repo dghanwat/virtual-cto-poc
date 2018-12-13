@@ -1,0 +1,111 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "How are you",
+                "Is anyone there?",
+                "Hello"
+            ],
+            "responses": [
+                "Hello, there.",
+                "Hi, how can I help?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye"
+            ],
+            "responses": [
+                "See you later!",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "hours",
+            "patterns": [
+                "What hours is EE office open?",
+                "What are working hours of the department office?",
+                "When does department office open?"
+            ],
+            "responses": [
+                "The department office is open for 10am-5pm on weekdays.",
+                "Working hours for the EE office are 10am-5pm every weekday"
+            ]
+        },
+        {
+            "tag": "sysad",
+            "patterns": [
+                "Who can I contact for network problems?",
+                "Whom should I contact for Mail issues?",
+                "Who can fix my computer problems?",
+                "My internet is not working, who can fix it?"
+            ],
+            "responses": [
+                "You may contact the Sysad room at xxxx@iitb.ac.in or give call at #XXXX#"
+            ]
+        },
+        {
+            "tag": "contactOffice",
+            "patterns": [
+                "How can I contact the Department office?",
+                "What is the email of EE office?",
+                "How to contact department office?"
+            ],
+            "responses": [
+                "You can email the office at xxxx@iitb.ac.in"
+            ]
+        },
+        {
+            "tag": "opentoday",
+            "patterns": [
+                "Is the Deparment office open today?",
+                "When does the Department office open today?",
+                "What are working hours of EE office today?"
+            ],
+            "responses": [
+                "The department office is open for 10am-5pm on weekdays.",
+                "Working hours for the EE office are 10am-5pm every weekday"
+            ]
+        },
+        {
+            "tag": "head",
+            "patterns": [
+                "Where does the head of the department sit?",
+                "Where can find the HOD?",
+                "Where is the office of the department head?"
+            ],
+            "responses": [
+                "The office of the Head of the Department is inside the deparment office, 2nd Floor, GG building"
+            ]
+        },
+        {
+            "tag": "officePhone",
+            "patterns": [
+                "What is the contact number of Department office?",
+                "What is the phone number of EE Office?"
+            ],
+            "responses": [
+                "You can call at #XXXX# to reach the EE office"
+            ]
+        }
+    ]
+}
