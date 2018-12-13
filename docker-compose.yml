@@ -20,6 +20,40 @@ services:
     - devnetwork     
   volumes:
     - /opt/rabbitmq:/var/lib/rabbitmq
+ chatterbot-engine:
+  build:
+    context: ./docker/chatterbot-engine
+  environment:
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - RABBITMQ_EXCHANGE=bot_response_exchange
+    - RABBITMQ_VIRTUALHOST=/
+    - RABBITMQ_BOT_INCOMING_QUEUE=bot_request_queue
+    - MONGODB_SERVER=db-mongo
+    - MONGODB_USER=devroot
+    - MONGODB_PASSWORD=devroot
+    - MONGODB_PORT=27017
+  networks:
+    - devnetwork  
+ ingestion-service:
+  build:
+    context: ./docker/ingestion-service
+  environment:
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - RABBITMQ_EXCHANGE=bot_request_exchange
+    - RABBITMQ_VIRTUALHOST=/
+    - RABBITMQ_BOT_INCOMING_QUEUE=ingestion_queue
+    - MONGODB_SERVER=db-mongo
+    - MONGODB_USER=devroot
+    - MONGODB_PASSWORD=devroot
+    - MONGODB_PORT=27017
+  networks:
+    - devnetwork  
  db-mongo:
   image: mongo:latest
   ports:
@@ -46,23 +80,17 @@ services:
     - ME_CONFIG_MONGODB_ADMINPASSWORD=devroot
   links:
     - db-mongo
- elasticsearch:
-  image: docker.elastic.co/elasticsearch/elasticsearch:6.5.2
-  container_name: elasticsearch
+ portal:
+  build:
+    context: ./docker/portal
   environment:
-    - cluster.name=docker-cluster
-    - bootstrap.memory_lock=true
-    - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-  ulimits:
-    memlock:
-      soft: -1
-      hard: -1
-  volumes:
-    - esdata1:/usr/share/elasticsearch/data
-  ports:
-    - 9200:9200
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - ENVIRONMENT=prod
   networks:
-    - devnetwork
+    - devnetwork  
 
       
  

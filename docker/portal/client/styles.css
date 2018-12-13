@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/styles/botui-theme-default.css";
+/* @import "assets/styles/botui.min.css"; */
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+

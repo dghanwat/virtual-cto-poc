@@ -1,0 +1,9 @@
+https://github.com/malfusion/angular-autobot
+docker run -d --name mongodb -p 27017:27017 -p 28017:28017 -e AUTH=no -e OPLOG_SIZE=50 tutum/mongodb
+set PATH=C:\software\Anaconda\anaconda3\envs\helloworld\;C:\software\Anaconda\anaconda3\envs\helloworld\Scripts\;%PATH%
+
+https://stackblitz.com/edit/angular-reactive-form-sobsoft?file=package.json
+cd c:/Reference/python-programs/faq-chatbot/faq-chatbot-service
+docker-compose build portal
+docker-compose up -d portal
+docker exec -it -u root aaa bash

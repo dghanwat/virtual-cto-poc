@@ -1,0 +1,24 @@
+https://www.devmashup.com/creating-a-rabbitmq-consumer-in-python/
+set PATH=C:\software\Anaconda\anaconda3\envs\helloworld\;C:\software\Anaconda\anaconda3\envs\helloworld\Scripts\;%PATH%
+https://blog.ruanbekker.com/blog/2017/12/13/create-a-chatbot-with-chatterbot-on-python/
+
+https://marcobonzanini.com/2015/02/02/how-to-query-elasticsearch-with-python/
+
+{
+  "messageType":"train"
+}
+
+{
+  "messageType":"chat",
+  "message":"What are constructors in Java"
+}
+
+{
+  "messageType": "create_kb_item",
+  "kbItems": [
+    {
+      "question": "WHAT DO YOU MEAN BY POINTS?",
+      "answer": "Because you are important to us, we want to know what you think about the products. As an added value, every time you rate the products you earn points which go straight to your account. 1 point are added to your account for every review that you give. You will need those points in order to redeem the sample products. So keep rating the products to keep earning points!"
+    }
+  ]
+}

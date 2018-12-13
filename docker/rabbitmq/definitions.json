@@ -56,10 +56,50 @@
     }
   ],
   "policies": [],
-  "queues": [],
+  "queues": [
+    {
+      "name": "bot_request_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "bot_response_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "ingestion_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
   "exchanges": [
     {
-      "name": "data_exchange",
+      "name": "ingestion_exchange",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "bot_response_exchange",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "bot_request_exchange",
       "vhost": "/",
       "type": "fanout",
       "durable": true,
@@ -68,5 +108,30 @@
       "arguments": {}
     }
   ],
-  "bindings": []
+  "bindings": [
+    {
+      "source": "bot_request_exchange",
+      "vhost": "/",
+      "destination": "bot_request_queue",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": {}
+    },
+    {
+      "source": "ingestion_exchange",
+      "vhost": "/",
+      "destination": "ingestion_queue",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": {}
+    },
+    {
+      "source": "bot_response_exchange",
+      "vhost": "/",
+      "destination": "bot_response_queue",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": {}
+    }
+  ]
 }
