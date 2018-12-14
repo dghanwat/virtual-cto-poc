@@ -9,3 +9,4 @@ set MONGODB_SERVER=192.168.99.100
 set MONGODB_USER=devroot
 set MONGODB_PASSWORD=devroot
 set MONGODB_PORT=27017
+set NOTIFY_EXCHANGE=notification_exchange

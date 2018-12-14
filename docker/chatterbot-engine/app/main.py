@@ -60,6 +60,8 @@ def handleRabbitMQMessage(ch, method, properties, body):
                 json_response = json.dumps({'response': chatResponse.serialize(), 'confidence': confidence})
             else: 
                 json_response = json.dumps({'response': {"text": DEFAULT_RESPONSE, "in_response_to": [], "extra_data": {}}, 'confidence': 0})
+                notifyMessage = '{"messageType":"notify_via_gmail","query":"'+incomingMessage["message"]+'"}'
+                publisher.publishNotifyMessage(notifyMessage, '')
         except IndexError:
             json_response = json.dumps({'response': {"text": DEFAULT_RESPONSE, "in_response_to": [], "extra_data": {}}, 'confidence': 0})
        

@@ -35,6 +35,7 @@ services:
     - MONGODB_USER=devroot
     - MONGODB_PASSWORD=devroot
     - MONGODB_PORT=27017
+    - NOTIFY_EXCHANGE=notification_exchange
   networks:
     - devnetwork  
  ingestion-service:
@@ -67,6 +68,21 @@ services:
     - RABBITMQ_EXCHANGE=ingestion_exchange
     - RABBITMQ_VIRTUALHOST=/
     - RABBITMQ_BOT_INCOMING_QUEUE=ingestion_queue
+  networks:
+    - devnetwork    
+ notification-service:
+  build:
+    context: ./docker/notification-service
+  environment:
+    - GMAIL_USER=lord.lewin.test@gmail.com
+    - GMAIL_PASSWORD=Atos@1234
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - RABBITMQ_EXCHANGE=notification_exchange
+    - RABBITMQ_VIRTUALHOST=/
+    - RABBITMQ_BOT_INCOMING_QUEUE=notification_queue
   networks:
     - devnetwork    
  db-mongo:

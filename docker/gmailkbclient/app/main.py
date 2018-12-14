@@ -6,7 +6,7 @@ import re
 from rabbitmq.publisher import Publisher
 import sched, time
 
-word = ["hello", "hello,","Thanks and Regards", "From: Lord Lewin", "Sent:", "To:","Subject:","Can you please help me in answering","Regards","Lord Lewin"] #list of strings to search for in email body
+word = ["On Fri","On Mon","On Tue","On Wed","On Thu","On Sat","On Sun","hello", "hello,","Thanks and Regards", "From: Lord Lewin", "Sent:", "To:","Subject:","Can you please help me in answering","Regards","Lord Lewin"] #list of strings to search for in email body
 question = ""
 answer = []
 kbItem = ""
@@ -48,6 +48,8 @@ def startProcessing():
                 print("Mail Body is ",body)
                 lines = re.split(r"[~\r\n]+", body.decode('utf-8'))
                 for line in lines:
+                    if(line.startswith(">")):
+                        line = line.replace(">","").strip()
                     if not any([line.lower().startswith(w.lower()) for w in word]):
                     # if any(word in line for word in word):
                         if line.lower().startswith("query:"):

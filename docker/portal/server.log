@@ -8088,3 +8088,53 @@ Error: Route.post() requires a callback function but got a [object Undefined]
 [INFO] - [2018-12-14T04:33:54.434Z] : RabbitMq: Connection virtualctorabbitmq opened
 [INFO] - [2018-12-14T04:34:06.314Z] : RabbitMq: Portal connected
 [INFO] - [2018-12-14T04:34:06.317Z] : RabbitMq: Connection virtualctorabbitmq opened
+[ERROR] - [2018-12-14T05:12:07.407Z] : RabbitMq: Connection failed. Trying again -- 1
+[ERROR] - [2018-12-14T05:12:07.408Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:08.413Z] : RabbitMq: Connection failed. Trying again -- 2
+[ERROR] - [2018-12-14T05:12:08.413Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:09.521Z] : RabbitMq: Connection failed. Trying again -- 3
+[ERROR] - [2018-12-14T05:12:09.521Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:10.756Z] : RabbitMq: Connection failed. Trying again -- 4
+[ERROR] - [2018-12-14T05:12:10.757Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:12.058Z] : RabbitMq: Connection failed. Trying again -- 5
+[ERROR] - [2018-12-14T05:12:12.059Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:13.461Z] : RabbitMq: Connection failed. Trying again -- 6
+[ERROR] - [2018-12-14T05:12:13.461Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:14.963Z] : RabbitMq: Connection failed. Trying again -- 7
+[ERROR] - [2018-12-14T05:12:14.963Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:16.565Z] : RabbitMq: Connection failed. Trying again -- 8
+[ERROR] - [2018-12-14T05:12:16.566Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:18.268Z] : RabbitMq: Connection failed. Trying again -- 9
+[ERROR] - [2018-12-14T05:12:18.268Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:20.070Z] : RabbitMq: Connection failed. Trying again -- 10
+[ERROR] - [2018-12-14T05:12:20.071Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:21.977Z] : RabbitMq: Connection failed. Trying again -- 11
+[ERROR] - [2018-12-14T05:12:21.978Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:23.980Z] : RabbitMq: Connection failed. Trying again -- 12
+[ERROR] - [2018-12-14T05:12:23.981Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:26.086Z] : RabbitMq: Connection failed. Trying again -- 13
+[ERROR] - [2018-12-14T05:12:26.087Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:28.289Z] : RabbitMq: Connection failed. Trying again -- 14
+[ERROR] - [2018-12-14T05:12:28.290Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:30.592Z] : RabbitMq: Connection failed. Trying again -- 15
+[ERROR] - [2018-12-14T05:12:30.592Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:32.994Z] : RabbitMq: Connection failed. Trying again -- 16
+[ERROR] - [2018-12-14T05:12:32.995Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:35.496Z] : RabbitMq: Connection failed. Trying again -- 17
+[ERROR] - [2018-12-14T05:12:35.497Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:38.113Z] : RabbitMq: Connection failed. Trying again -- 18
+[ERROR] - [2018-12-14T05:12:38.114Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:40.818Z] : RabbitMq: Connection failed. Trying again -- 19
+[ERROR] - [2018-12-14T05:12:40.818Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:43.621Z] : RabbitMq: Connection failed. Trying again -- 20
+[ERROR] - [2018-12-14T05:12:43.623Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:46.527Z] : RabbitMq: Connection failed. Trying again -- 21
+[ERROR] - [2018-12-14T05:12:46.528Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:49.532Z] : RabbitMq: Connection failed. Trying again -- 22
+[ERROR] - [2018-12-14T05:12:49.532Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:52.633Z] : RabbitMq: Connection failed. Trying again -- 23
+[ERROR] - [2018-12-14T05:12:52.634Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2018-12-14T05:12:55.838Z] : RabbitMq: Connection failed. Trying again -- 24
+[ERROR] - [2018-12-14T05:12:55.838Z] : RabbitMq: Connection virtualctorabbitmq failed
+[INFO] - [2018-12-14T05:12:58.647Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-14T05:12:58.647Z] : RabbitMq: Connection virtualctorabbitmq opened
