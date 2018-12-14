@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 DEFAULT_RESPONSE = 'I am sorry, but I am not aware of this. I am still learning.'
-THRESHOLD = 0.80
+THRESHOLD = 0.65
 publisher = Publisher()
 chatbot = ChatBot('Terminal',
                   storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
@@ -56,7 +56,7 @@ def handleRabbitMQMessage(ch, method, properties, body):
             chatResponse = chatbot.get_response(incomingMessage["message"],properties.correlation_id)
             confidence = chatResponse.confidence
             print("Confidence " , confidence)
-            if confidence > THRESHOLD:
+            if confidence >= THRESHOLD:
                 json_response = json.dumps({'response': chatResponse.serialize(), 'confidence': confidence})
             else: 
                 json_response = json.dumps({'response': {"text": DEFAULT_RESPONSE, "in_response_to": [], "extra_data": {}}, 'confidence': 0})

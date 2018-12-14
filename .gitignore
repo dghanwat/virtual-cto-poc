@@ -4,3 +4,4 @@
 /docker/chatterbot-engine/app/mongodb/__pycache__
 /docker/chatterbot-engine/*.sqlite3
 /vim.exe.stackdump
+/docker/gmailkbclient/app/rabbitmq/__pycache__/*.pyc

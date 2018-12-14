@@ -53,7 +53,22 @@ services:
     - MONGODB_PASSWORD=devroot
     - MONGODB_PORT=27017
   networks:
-    - devnetwork  
+    - devnetwork
+ gmailkbclient:
+  build:
+    context: ./docker/gmailkbclient
+  environment:
+    - GMAIL_USER=lord.lewin.test@gmail.com
+    - GMAIL_PASSWORD=Atos@1234
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - RABBITMQ_EXCHANGE=ingestion_exchange
+    - RABBITMQ_VIRTUALHOST=/
+    - RABBITMQ_BOT_INCOMING_QUEUE=ingestion_queue
+  networks:
+    - devnetwork    
  db-mongo:
   image: mongo:latest
   ports:
