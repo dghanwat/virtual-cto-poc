@@ -36,6 +36,7 @@ services:
     - MONGODB_PASSWORD=devroot
     - MONGODB_PORT=27017
     - NOTIFY_EXCHANGE=notification_exchange
+    - ENV CHAT_BASE_API_KEY=d57b42e4-d3b9-468d-b698-dbc1c106e76b
   networks:
     - devnetwork  
  ingestion-service:

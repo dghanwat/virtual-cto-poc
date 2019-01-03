@@ -1,13 +1,13 @@
+set GMAIL_USER=lord.lewin.test@gmail.com
+set GMAIL_PASSWORD=Atos@1234
 set RABBITMQ_USER=admin
 set RABBITMQ_PASSWORD=rabbitmqadmin
 set RABBITMQ_SERVER=192.168.99.100
 set RABBITMQ_PORT=5672
-set RABBITMQ_EXCHANGE=bot_response_exchange
+set RABBITMQ_EXCHANGE=ingestion_exchange
 set RABBITMQ_VIRTUALHOST=/
-set RABBITMQ_BOT_INCOMING_QUEUE=bot_request_queue
+set RABBITMQ_BOT_INCOMING_QUEUE=ingestion_queue
 set MONGODB_SERVER=192.168.99.100
 set MONGODB_USER=devroot
 set MONGODB_PASSWORD=devroot
 set MONGODB_PORT=27017
-set NOTIFY_EXCHANGE=notification_exchange
-set CHAT_BASE_API_KEY=d57b42e4-d3b9-468d-b698-dbc1c106e76b

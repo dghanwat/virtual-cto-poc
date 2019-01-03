@@ -8138,3 +8138,22 @@ Error: Route.post() requires a callback function but got a [object Undefined]
 [ERROR] - [2018-12-14T05:12:55.838Z] : RabbitMq: Connection virtualctorabbitmq failed
 [INFO] - [2018-12-14T05:12:58.647Z] : RabbitMq: Portal connected
 [INFO] - [2018-12-14T05:12:58.647Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-17T04:01:09.447Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-17T04:01:09.452Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-17T04:01:20.162Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-17T04:01:20.165Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-18T01:05:48.830Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-18T01:05:48.834Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-18T01:05:58.676Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-18T01:05:58.680Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-18T03:22:16.149Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-18T03:22:16.152Z] : RabbitMq: Connection virtualctorabbitmq opened
+[ERROR] - [2018-12-18T11:17:24.238Z] : RabbitMq: Connection failed. Trying again -- 1
+[INFO] - [2018-12-18T11:17:24.344Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-18T11:17:24.344Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-18T11:17:24.371Z] : RabbitMq: Connection Queue already exists
+[ERROR] - [2018-12-18T11:17:24.388Z] : RabbitMq: Connection virtualctorabbitmq failed
+[INFO] - [2018-12-18T12:43:05.136Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-18T12:43:05.141Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2018-12-18T12:43:17.723Z] : RabbitMq: Portal connected
+[INFO] - [2018-12-18T12:43:17.727Z] : RabbitMq: Connection virtualctorabbitmq opened

@@ -1,0 +1,9 @@
+set GMAIL_USER=lord.lewin.test@gmail.com
+set GMAIL_PASSWORD=Atos@1234
+set RABBITMQ_USER=admin
+set RABBITMQ_PASSWORD=rabbitmqadmin
+set RABBITMQ_SERVER=192.168.99.100
+set RABBITMQ_PORT=5672
+set RABBITMQ_EXCHANGE=notification_exchange
+set RABBITMQ_VIRTUALHOST=/
+set RABBITMQ_BOT_INCOMING_QUEUE=notification_queue

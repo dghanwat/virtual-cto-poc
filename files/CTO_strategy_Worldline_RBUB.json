@@ -1,134 +1,137 @@
-[
-  {
-    "question": "Who is technical director for Merchant services",
-    "answer": "We have Andy Knott and Alan Lambert as technical directors for Merchant Services."
-  },
-  {
-    "question": "Whom should I ask if I have any questions in  Merchant Services?",
-    "answer": "We have Andy Knott and Alan Lambert as technical directors for Merchant Services.You can contact them."
-  },
-  {
-    "question": "Who should I contact for BSM in Merchant Services?",
-    "answer": "Andy Knott."
-  },
-  {
-    "question": "Who is Senior Solution Architect for DSS in Merchant Services?",
-    "answer": "We have Alan Lambert as Senior Solution Architect for Merchant Services of DSS."
-  },
-  {
-    "question": "whom should I ask if I have any questions regarding DSS in Merchant Services?",
-    "answer": "We have Alan Lambert as Senior Solution Architect for Merchant Services of DSS.You can contact him."
-  },
-  {
-    "question": "Who should I contact for DSS in Merchant Services?",
-    "answer": "We have Alan Lambert as Senior Solution Architect for Merchant Services of DSS.You can contact him."
-  },
-  {
-    "question": "Who is technical director for payments in Merchant services?",
-    "answer": "We have Andy Knott as technical directors for payments in Merchant Services."
-  },
-  {
-    "question": "Whom should I ask if I have any questions for payments in Merchant Services?",
-    "answer": "We have Andy Knott as technical directors for payments in Merchant Services.You can contact him."
-  },
-  {
-    "question": "Who should I contact for payments in Merchant Services?",
-    "answer": "Andy Knott."
-  },
-  {
-    "question": "Who is technical director for settlements in Mobile & e-Transaction Services?",
-    "answer": "We haveAdrian Hepworth as technical directors for settlements in Mobile & e-Transaction Services."
-  },
-  {
-    "question": "Whom should I ask if I have any questions for settlements in Mobile & e-Transaction Services?",
-    "answer": "We have Adrian Hepworth as technical directors for settlements in Mobile & e-Transaction Services.You can contact him."
-  },
-  {
-    "question": "Who should I contact for settlements in Mobile & e-Transaction Services?",
-    "answer": "Adrian Hepworth."
-  },
-  {
-    "question": "Who is chief architect for settlements in Mobile & e-Transaction Services?",
-    "answer": "We haveAdrian Hepworth as chief architect for settlements in Mobile & e-Transaction Services."
-  },
-  {
-    "question": "Whom should I ask if I have any questions for settlements in Mobile & e-Transaction Services?",
-    "answer": "We have Adrian Hepworth as chief architect for settlements in Mobile & e-Transaction Services.You can contact him."
-  },
-  {
-    "question": "Who is technical director for transport operations in Mobile & e-Transaction Services?",
-    "answer": "We have Lee Sunter as technical directors for transport operations in Mobile & e-Transaction Services."
-  },
-  {
-    "question": "Whom should I ask if I have any questions for transport operations in Mobile & e-Transaction Services?",
-    "answer": "We have Lee Sunter as technical directors for transport operations in Mobile & e-Transaction Services.You can contact him."
-  },
-  {
-    "question": "Who should I contact for transport operations in Mobile & e-Transaction Services?",
-    "answer": "Lee Sunter."
-  },
-  {
-    "question": "Who is technical director for transport retail in Mobile & e-Transaction Services?",
-    "answer": "We steve ford as technical directors for transport retail in Mobile & e-Transaction Services."
-  },
-  {
-    "question": "Whom should I ask if I have any questions for transport retail in Mobile & e-Transaction Services?",
-    "answer": "We have steve ford as technical directors for transport retail in Mobile & e-Transaction Services.You can contact him."
-  },
-  {
-    "question": "Who should I contact for transport retail in Mobile & e-Transaction Services?",
-    "answer": "steve ford."
-  },
-  {
-    "question": "Who is Andy Knott?",
-    "answer": "Andy Knott is the technical director of Merchant services in Payments and BSM.Andy works with the team in Wolverhampton in support of the ACS (Account Card Scheme) platform and is part of the Thursday MS review for bids/IPERs. Andy is home based from the Milton Keynes office but works largely from home. This is Andy's primary area of responsibility."
-  },
-  {
-    "question": "Since when did Andy Knott started working on Payments?",
-    "answer": "Andy has started to pick up this area in 2017 following the departure from the business of Luis Lancos. This is Andy's supplemental area of responsibility (currently) given the low volumes of work (bids/products) for this area in the UK business. Andy's focus in UK only at this time."
-  },
-  {
-    "question": "Who is Alan Lambert?",
-    "answer": "Alan Lambert is the senior solution Architect for DSS in Merchant Services. Alan is part of the DSS team and is based on Milton Keynes. He has worked as the Development Manager in the DSS team supporting the FAST and Hospitality solutions for many years."
-  },
-  {
-    "question": "Who is Adrian Hepworth?",
-    "answer": "Adrian Hepworth is Technical Director/Chief Architect for settlements in Mobile & e-Transaction Services. Adrian has history back to 1998 with the solutions for the Lennon client, he is also a leading Agile/DevOps evangelist and Cloud architect. Adrian is base located in Leeds but spends his time either at tome or Beeston."
-  },
-  {
-    "question": "Who is Lee Sunter?",
-    "answer": "Lee Sunter is Technical Director for transport operations in Mobile & e-Transaction Services. Lee has a background as a applications/software developer/designer/architect and is now a leading Agile/DevOps coach and Cloud Architect. Lee has previously been the UK SPoC for SDCO. He is based from home and spends time in the Beeston and Darlington offices."
-  },
-  {
-    "question": "Who is Steve Ford?",
-    "answer": "Steve Ford is Technical Director for transport retail in Mobile & e-Transaction Services. Steve has a background through Lennon and then many years as an Oracle DBA and Solution Architect within the Transport Retail area. Steve is based out of the Beeston office."
-  },
-  {
-    "question": "Who all are working in UK?",
-    "answer": "Steve Ford,Lee Sunter,Adrian Hepworth,Alan Lambert and Andy Knott."
-  },
-  {
-    "question": "What is Exception Request Process?",
-    "answer": "At times there is a need to do something against strategy and for those few and far between times we have created an exception request process."
-  },
-  {
-    "question": "What is the need of Exception Request Process?",
-    "answer": "At times there is a need to do something against strategy and for those few and far between times we have created an exception request process."
-  },
-  {
-    "question": "How to create a Exception Strategy?",
-    "answer": "To support simplicity of the process we have created an example exception page and also have created a Confluence template that you can add to your project space. Our request to you will be to create a new page in your space using the CTO Strategy Exceptions template and use that page to review the exception request with the Technical Director or Senior Solution Architect for your area (see below for assistance)."
-  },
-  {
-    "question": "Who is responsible for the technical strategies?",
-    "answer": "The Technical Strategies that are defined are the responsibility of the Worldline RBU B CTO ( Ryan Bryers )."
-  },
-  {
-    "question": "Who are the gatekeepers in Review and assurance?",
-    "answer": "The Technical Directors and Senior Solution Architects have been chosen to define the information in sub-pages as it is their role to act as gatekeepers in Review & Assurance."
-  },
-  {
-    "question": "Tell me something about Ownership of Technical Strategy?",
-    "answer": "Unsurprisingly the Technical Strategies that are defined are the responsibility of the Worldline RBU B CTO ( Ryan Bryers ). The pages themselves will be maintained by the Technical Directors and invited Senior Solution Architects (normally these are people that work in an area where the CTO Group does not have Technical Director coverage). There is a monthly review that takes place to ensure that the strategy is current and that the policies are easily adoptable into the products and solutions that enter the Rainbow/IPER processes. The Technical Directors and Senior Solution Architects have been chosen to define the information in this sub-pages as it is their role to act as gatekeepers in Review & Assurance. Feedback is encouraged, a strategy and process to follow is only as good as the guidance it offers. Should bidding or product teams find that the defined strategies are become blockers or are indeed becoming out of date feedback can be provided to the strategy on the page in Confluence (the page for the strategy). The comments area of the page should be used for feedback which will be addressed by the Technical Directors/Senior Solution Architects."
-  }
-]
+{
+  "messageType": "create_kb_item",
+  "kbItems": [
+    {
+      "question": "Who is technical director for Merchant services",
+      "answer": "We have Andy Knott and Alan Lambert as technical directors for Merchant Services."
+    },
+    {
+      "question": "Whom should I ask if I have any questions in  Merchant Services?",
+      "answer": "We have Andy Knott and Alan Lambert as technical directors for Merchant Services.You can contact them."
+    },
+    {
+      "question": "Who should I contact for BSM in Merchant Services?",
+      "answer": "Andy Knott."
+    },
+    {
+      "question": "Who is Senior Solution Architect for DSS in Merchant Services?",
+      "answer": "We have Alan Lambert as Senior Solution Architect for Merchant Services of DSS."
+    },
+    {
+      "question": "whom should I ask if I have any questions regarding DSS in Merchant Services?",
+      "answer": "We have Alan Lambert as Senior Solution Architect for Merchant Services of DSS.You can contact him."
+    },
+    {
+      "question": "Who should I contact for DSS in Merchant Services?",
+      "answer": "We have Alan Lambert as Senior Solution Architect for Merchant Services of DSS.You can contact him."
+    },
+    {
+      "question": "Who is technical director for payments in Merchant services?",
+      "answer": "We have Andy Knott as technical directors for payments in Merchant Services."
+    },
+    {
+      "question": "Whom should I ask if I have any questions for payments in Merchant Services?",
+      "answer": "We have Andy Knott as technical directors for payments in Merchant Services.You can contact him."
+    },
+    {
+      "question": "Who should I contact for payments in Merchant Services?",
+      "answer": "Andy Knott."
+    },
+    {
+      "question": "Who is technical director for settlements in Mobile & e-Transaction Services?",
+      "answer": "We have Adrian Hepworth as technical directors for settlements in Mobile & e-Transaction Services."
+    },
+    {
+      "question": "Whom should I ask if I have any questions for settlements in Mobile & e-Transaction Services?",
+      "answer": "We have Adrian Hepworth as technical directors for settlements in Mobile & e-Transaction Services.You can contact him."
+    },
+    {
+      "question": "Who should I contact for settlements in Mobile & e-Transaction Services?",
+      "answer": "Adrian Hepworth."
+    },
+    {
+      "question": "Who is chief architect for settlements in Mobile & e-Transaction Services?",
+      "answer": "We haveAdrian Hepworth as chief architect for settlements in Mobile & e-Transaction Services."
+    },
+    {
+      "question": "Whom should I ask if I have any questions for settlements in Mobile & e-Transaction Services?",
+      "answer": "We have Adrian Hepworth as chief architect for settlements in Mobile & e-Transaction Services.You can contact him."
+    },
+    {
+      "question": "Who is technical director for transport operations in Mobile & e-Transaction Services?",
+      "answer": "We have Lee Sunter as technical directors for transport operations in Mobile & e-Transaction Services."
+    },
+    {
+      "question": "Whom should I ask if I have any questions for transport operations in Mobile & e-Transaction Services?",
+      "answer": "We have Lee Sunter as technical directors for transport operations in Mobile & e-Transaction Services.You can contact him."
+    },
+    {
+      "question": "Who should I contact for transport operations in Mobile & e-Transaction Services?",
+      "answer": "Lee Sunter."
+    },
+    {
+      "question": "Who is technical director for transport retail in Mobile & e-Transaction Services?",
+      "answer": "We steve ford as technical directors for transport retail in Mobile & e-Transaction Services."
+    },
+    {
+      "question": "Whom should I ask if I have any questions for transport retail in Mobile & e-Transaction Services?",
+      "answer": "We have steve ford as technical directors for transport retail in Mobile & e-Transaction Services.You can contact him."
+    },
+    {
+      "question": "Who should I contact for transport retail in Mobile & e-Transaction Services?",
+      "answer": "steve ford."
+    },
+    {
+      "question": "Who is Andy Knott?",
+      "answer": "Andy Knott is the technical director of Merchant services in Payments and BSM.Andy works with the team in Wolverhampton in support of the ACS (Account Card Scheme) platform and is part of the Thursday MS review for bids/IPERs. Andy is home based from the Milton Keynes office but works largely from home. This is Andy's primary area of responsibility."
+    },
+    {
+      "question": "Since when did Andy Knott started working on Payments?",
+      "answer": "Andy has started to pick up this area in 2017 following the departure from the business of Luis Lancos. This is Andy's supplemental area of responsibility (currently) given the low volumes of work (bids/products) for this area in the UK business. Andy's focus in UK only at this time."
+    },
+    {
+      "question": "Who is Alan Lambert?",
+      "answer": "Alan Lambert is the senior solution Architect for DSS in Merchant Services. Alan is part of the DSS team and is based on Milton Keynes. He has worked as the Development Manager in the DSS team supporting the FAST and Hospitality solutions for many years."
+    },
+    {
+      "question": "Who is Adrian Hepworth?",
+      "answer": "Adrian Hepworth is Technical Director/Chief Architect for settlements in Mobile & e-Transaction Services. Adrian has history back to 1998 with the solutions for the Lennon client, he is also a leading Agile/DevOps evangelist and Cloud architect. Adrian is base located in Leeds but spends his time either at tome or Beeston."
+    },
+    {
+      "question": "Who is Lee Sunter?",
+      "answer": "Lee Sunter is Technical Director for transport operations in Mobile & e-Transaction Services. Lee has a background as a applications/software developer/designer/architect and is now a leading Agile/DevOps coach and Cloud Architect. Lee has previously been the UK SPoC for SDCO. He is based from home and spends time in the Beeston and Darlington offices."
+    },
+    {
+      "question": "Who is Steve Ford?",
+      "answer": "Steve Ford is Technical Director for transport retail in Mobile & e-Transaction Services. Steve has a background through Lennon and then many years as an Oracle DBA and Solution Architect within the Transport Retail area. Steve is based out of the Beeston office."
+    },
+    {
+      "question": "Who all are working in UK?",
+      "answer": "Steve Ford,Lee Sunter,Adrian Hepworth,Alan Lambert and Andy Knott."
+    },
+    {
+      "question": "What is Exception Request Process?",
+      "answer": "At times there is a need to do something against strategy and for those few and far between times we have created an exception request process."
+    },
+    {
+      "question": "What is the need of Exception Request Process?",
+      "answer": "At times there is a need to do something against strategy and for those few and far between times we have created an exception request process."
+    },
+    {
+      "question": "How to create a Exception Strategy?",
+      "answer": "To support simplicity of the process we have created an example exception page and also have created a Confluence template that you can add to your project space. Our request to you will be to create a new page in your space using the CTO Strategy Exceptions template and use that page to review the exception request with the Technical Director or Senior Solution Architect for your area (see below for assistance)."
+    },
+    {
+      "question": "Who is responsible for the technical strategies?",
+      "answer": "The Technical Strategies that are defined are the responsibility of the Worldline RBU B CTO ( Ryan Bryers )."
+    },
+    {
+      "question": "Who are the gatekeepers in Review and assurance?",
+      "answer": "The Technical Directors and Senior Solution Architects have been chosen to define the information in sub-pages as it is their role to act as gatekeepers in Review & Assurance."
+    },
+    {
+      "question": "Tell me something about Ownership of Technical Strategy?",
+      "answer": "Unsurprisingly the Technical Strategies that are defined are the responsibility of the Worldline RBU B CTO ( Ryan Bryers ). The pages themselves will be maintained by the Technical Directors and invited Senior Solution Architects (normally these are people that work in an area where the CTO Group does not have Technical Director coverage). There is a monthly review that takes place to ensure that the strategy is current and that the policies are easily adoptable into the products and solutions that enter the Rainbow/IPER processes. The Technical Directors and Senior Solution Architects have been chosen to define the information in this sub-pages as it is their role to act as gatekeepers in Review & Assurance. Feedback is encouraged, a strategy and process to follow is only as good as the guidance it offers. Should bidding or product teams find that the defined strategies are become blockers or are indeed becoming out of date feedback can be provided to the strategy on the page in Confluence (the page for the strategy). The comments area of the page should be used for feedback which will be addressed by the Technical Directors/Senior Solution Architects."
+    }
+  ]
+}

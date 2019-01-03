@@ -17,7 +17,8 @@ export default class ChatCtrl {
         console.log('Request for chat', req.body);
         let input = {
             "messageType": "chat",
-            "message": req.body.message
+            "message": req.body.message,
+            "userId":req.body.userId
         }
         let id = this.randomid();
         this.rabbitMQ.eventEmitter.once(id, msg => {

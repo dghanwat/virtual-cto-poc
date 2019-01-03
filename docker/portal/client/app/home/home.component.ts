@@ -18,10 +18,13 @@ export class HomeComponent implements OnInit {
   HUMAN: string = "HUMAN";
   asyncMesgId:any;
   THRESHOLD:number = 0.60;
+  userId: string;
 
   constructor(private botService: AngularAutobotService,
     private chatService: ChatService,
-    public toast: ToastComponent) { }
+    public toast: ToastComponent) {
+      this.userId = '_' + Math.random().toString(36).substr(2, 9);
+     }
 
 
   ngOnInit() {
@@ -29,7 +32,7 @@ export class HomeComponent implements OnInit {
       this.showWelcomeMessages('Hello There', this.BOT);
     }, 1000);
     setTimeout(() => {
-      this.showWelcomeMessages('Welcome to Virtual CTO Bot', this.BOT)
+      this.showWelcomeMessages('This is Lord Lewin here. I am your Virtual CTO Bot', this.BOT)
     }, 2000);
     setTimeout(() => {
       this.showWelcomeMessages('I can help you with answers for general queries regarding WL UK CTO Group ', this.BOT)
@@ -93,11 +96,15 @@ export class HomeComponent implements OnInit {
           chatMessage._id = uuidv1();
           chatMessage.message = res;
           chatMessage.messageType="chat"
+          chatMessage.userId = this.userId
           this.chatService.chat(chatMessage).subscribe(
             res => {
               // Once we get the Response from the server 
               this.doneLoading(botId, asyncMesgId, 1);
-              this.updateContent(botId, asyncMesgId, res.message.content, 1);
+              let formattedContent = res.message.content.replace(/(\.(\s+))/g, '\$1 <br /><br />');
+              formattedContent = this.linkify(formattedContent);
+              // let formattedContent = res.message.content.replace("([^\.]*?)",)
+              this.updateContent(botId, asyncMesgId, formattedContent, 1);
               if(res.message.confidence < this.THRESHOLD) {
                 this.showWelcomeMessages('<a href="/human" target="_blank">Click here to speak to a real person</a>', this.BOT);
                 this.showWelcomeMessages('I promise, I would have learnt the response when you come here next time', this.BOT);
@@ -161,5 +168,23 @@ export class HomeComponent implements OnInit {
       this.botService.bot(botId).updateMessageContent(botId, asyncMesgId, content);
     }, timeout);
   }
+
+  linkify(inputText) {
+    var replacedText, replacePattern1, replacePattern2, replacePattern3;
+
+    //URLs starting with http://, https://, or ftp://
+    replacePattern1 = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
+    replacedText = inputText.replace(replacePattern1, '<a href="$1" target="_blank">$1</a>');
+
+    //URLs starting with "www." (without // before it, or it'd re-link the ones done above).
+    replacePattern2 = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
+    replacedText = replacedText.replace(replacePattern2, '$1<a href="http://$2" target="_blank">$2</a>');
+
+    //Change email addresses to mailto:: links.
+    replacePattern3 = /(([a-zA-Z0-9\-\_\.])+@[a-zA-Z\_]+?(\.[a-zA-Z]{2,6})+)/gim;
+    replacedText = replacedText.replace(replacePattern3, '<a href="mailto:$1">$1</a>');
+
+    return replacedText;
+}
 }
 

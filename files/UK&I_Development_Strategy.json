@@ -1,58 +1,61 @@
-[
-	{
-	  "question": "What is Strategy?",
-	  "answer": "The strategy defines what our core principles for development are, how we can offer assessment and paths to improve existing solutions/products and what is expected of anything done on a greenfield basis."
-	},
-	{
-	  "question": "Define Strategy",
-	  "answer": "The strategy defines what our core principles for development are, how we can offer assessment and paths to improve existing solutions/products and what is expected of anything done on a greenfield basis."
-	},
-	{
-	  "question": "Why do we need Strategy?",
-	  "answer": "Since 2015 we have focused on how we can adjust our approach to development so that we are running in 3-Speeds, to assume that a single speed will support our business is unrealistic. This means that we still have a place for more traditional Waterfall based methods but we also accept that some older solutions will adjust and evolve their way of working as they adopt principles of agility, cloud, automation and DevOps with anything new focused solely in a DevOps manner."
-	},
-	{
-	  "question": "What is the approach to Strategy?",
-	  "answer": "Since 2015 we have focused on how we can adjust our approach to development so that we are running in 3-Speeds, to assume that a single speed will support our business is unrealistic. This means that we still have a place for more traditional Waterfall based methods but we also accept that some older solutions will adjust and evolve their way of working as they adopt principles of agility, cloud, automation and DevOps with anything new focused solely in a DevOps manner."
-	},
-	{
-	  "question": "What principles can be adopted for older and newer solutions?",
-	  "answer": "Agility, cloud, automation and DevOps with anything new focused solely in a DevOps manner."
-	},
-	{
-	  "question": "What is achieved by implementing a Strategy?",
-	  "answer": "Strategy that will enable us to stabilise the development of both Product and Solution so that it's not seen as a risk area and that it is based on a repeatable and consistent method of application. Essentially the strategy if executed correctly will become a hygiene factor to how we underpin our business instead of being a focus and at times problem area."
-	},
-	{
-	  "question": "What are the tools and technologies implemented?",
-	  "answer": "In - house technologies like Kazan, NZP and external like Atlassian,Github, LucidChart."
-	},
-	{
-	  "question": "What are choice of cloud adoption?",
-	  "answer": "AWS and FinancialForce"
-	},
-	{
-	  "question": "What is the API management platform used?",
-	  "answer": "Our analysis was used by our colleagues in SDCO and resulted in the choice of APIGEE."
-	},
-	{
-	  "question": "What are the core business languages Worldline focuses on?",
-	  "answer": "Worldline on a global basis is focused on Java with the majority of the tooling, skills and expertise focused on Java. The UK is and always has been much different with more solutions in .Net flavours than Java and plenty of VB and other older technologies still in place."
-	},
-	{
-	  "question": "What might be the emerging language in development processes?",
-	  "answer": "Scala development"
-	},
-	{
-	  "question": "Where should the Strategy focus on?",
-	  "answer": "Presentation, mobile, automation and data science."
-	},
-	{
-	  "question": "Key Principles of Strategy?",
-	  "answer": "Process & Quality, Development Languages leading to Training, Agile, API and cloud."
-	},
-	{
-	  "question": "What gives repeatable approach to implementations of Strategy?",
-	  "answer": "From BAU to new business implementations the strategy has to have a repeatable approach that will allow us to deliver with confidence and not see development work as a risk. Key Principles being Process & Quality"
-	}
-  ]
+{
+	"messageType": "create_kb_item",
+	"kbItems": [
+		{
+			"question": "What is Strategy?",
+			"answer": "The strategy defines what our core principles for development are, how we can offer assessment and paths to improve existing solutions/products and what is expected of anything done on a greenfield basis."
+		},
+		{
+			"question": "Define Strategy",
+			"answer": "The strategy defines what our core principles for development are, how we can offer assessment and paths to improve existing solutions/products and what is expected of anything done on a greenfield basis."
+		},
+		{
+			"question": "Why do we need Strategy?",
+			"answer": "Since 2015 we have focused on how we can adjust our approach to development so that we are running in 3-Speeds, to assume that a single speed will support our business is unrealistic. This means that we still have a place for more traditional Waterfall based methods but we also accept that some older solutions will adjust and evolve their way of working as they adopt principles of agility, cloud, automation and DevOps with anything new focused solely in a DevOps manner."
+		},
+		{
+			"question": "What is the approach to Strategy?",
+			"answer": "Since 2015 we have focused on how we can adjust our approach to development so that we are running in 3-Speeds, to assume that a single speed will support our business is unrealistic. This means that we still have a place for more traditional Waterfall based methods but we also accept that some older solutions will adjust and evolve their way of working as they adopt principles of agility, cloud, automation and DevOps with anything new focused solely in a DevOps manner."
+		},
+		{
+			"question": "What principles can be adopted for older and newer solutions?",
+			"answer": "Agility, cloud, automation and DevOps with anything new focused solely in a DevOps manner."
+		},
+		{
+			"question": "What is achieved by implementing a Strategy?",
+			"answer": "Strategy that will enable us to stabilise the development of both Product and Solution so that it's not seen as a risk area and that it is based on a repeatable and consistent method of application. Essentially the strategy if executed correctly will become a hygiene factor to how we underpin our business instead of being a focus and at times problem area."
+		},
+		{
+			"question": "What are the tools and technologies implemented?",
+			"answer": "In - house technologies like Kazan, NZP and external like Atlassian,Github, LucidChart."
+		},
+		{
+			"question": "What are choice of cloud adoption?",
+			"answer": "AWS and FinancialForce"
+		},
+		{
+			"question": "What is the API management platform used?",
+			"answer": "Our analysis was used by our colleagues in SDCO and resulted in the choice of APIGEE."
+		},
+		{
+			"question": "What are the core business languages Worldline focuses on?",
+			"answer": "Worldline on a global basis is focused on Java with the majority of the tooling, skills and expertise focused on Java. The UK is and always has been much different with more solutions in .Net flavours than Java and plenty of VB and other older technologies still in place."
+		},
+		{
+			"question": "What might be the emerging language in development processes?",
+			"answer": "Scala development"
+		},
+		{
+			"question": "Where should the Strategy focus on?",
+			"answer": "Presentation, mobile, automation and data science."
+		},
+		{
+			"question": "Key Principles of Strategy?",
+			"answer": "Process & Quality, Development Languages leading to Training, Agile, API and cloud."
+		},
+		{
+			"question": "What gives repeatable approach to implementations of Strategy?",
+			"answer": "From BAU to new business implementations the strategy has to have a repeatable approach that will allow us to deliver with confidence and not see development work as a risk. Key Principles being Process & Quality"
+		}
+	]
+}
