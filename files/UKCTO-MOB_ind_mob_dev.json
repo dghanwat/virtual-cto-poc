@@ -1,0 +1,109 @@
+{
+  "messageType": "create_kb_item",
+  "kbItems": [
+    {
+      "question": "When was the policy regarding Industrialized (Mobile) Devices created?",
+      "answer": "25th June 2018"
+    },
+    {
+      "question": "When was the policy regarding Industrialized (Mobile) Devices updated?",
+      "answer": "25th June 2018"
+    },
+    {
+      "question": "Why was the policy regarding Industrialized (Mobile) Devices created?",
+      "answer": "Industrialized (Mobile) Devices policy has been created by Ryan Bryers to provide guidance on Industrialized mobile devices (mobile handsets and tablets) that should be used for Products & Solutions."
+    },
+    {
+      "question": "What is the need of policy regarding Industrialized (Mobile) Devices policy?",
+      "answer": "Industrialized (Mobile) Devices policy has been created by Ryan Bryers to provide guidance on Industrialized mobile devices (mobile handsets and tablets) that should be used for Products & Solutions."
+    },
+    {
+      "question": "What does Industrialized (Mobile) Devices policy contains?",
+      "answer": "Industrialized (Mobile) Devices policy has been created by Ryan Bryers to provide guidance on Industrialized mobile devices (mobile handsets and tablets) that should be used for Products & Solutions."
+    },
+    {
+      "question": "Who created Industrialized Mobile Devices?",
+      "answer": "Industrialized Mobile Devices policy has been created by Ryan Bryers."
+    },
+    {
+      "question": "Does the Industrialized Mobile Devices provides guidance on Industrialized mobile devices (mobile handsets and tablets) that should be used for Products & Solutions?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Is the policy regarding Industrialized Mobile Devices for products or for solutions?",
+      "answer": "It is for both Products & Solutions."
+    },
+    {
+      "question": "Is the policy regarding Industrialized Mobile Devices for products?",
+      "answer": "It is for both Products & Solutions."
+    },
+    {
+      "question": "Is the policy regarding Industrialized Mobile Devices for solutions?",
+      "answer": "It is for both Products & Solutions."
+    },
+    {
+      "question": "Who reviews the policy regarding Industrialized Mobile Devices?",
+      "answer": "It is reviewed by TBA."
+    },
+    {
+      "question": "Is the policy regarding Industrialized Mobile Devices reviewed?",
+      "answer": "Yes.It is reviewed by TBA."
+    },
+    {
+      "question": "What is the applicable location of the policy regarding Industrialized Mobile Devices?",
+      "answer": "UK&I."
+    },
+    {
+      "question": "Is UK&I applicable location for Industrialized Mobile Devices?",
+      "answer": "Yes."
+    },
+    {
+      "question": "What does Industrialized mobile devices mean?",
+      "answer": "As mobile solutions are a key part of our Arsenal we become responsible for the full managed\nservice to a mobile device, this is something that is very difficult to offer on a commercial device as\nwe have no control of deprecation rates or access to upgrades & patches. Where we are to be\nresponsible for the full managed services on a mobile device we must use a Industrialized device."
+    },
+    {
+      "question": "What is Industrialized mobile device?",
+      "answer": "As mobile solutions are a key part of our Arsenal we become responsible for the full managed\nservice to a mobile device, this is something that is very difficult to offer on a commercial device as\nwe have no control of deprecation rates or access to upgrades & patches. Where we are to be\nresponsible for the full managed services on a mobile device we must use a Industrialized device."
+    },
+    {
+      "question": "What are the responsibilities of Industrialized mobile devices",
+      "answer": "Keeping the devices in support, Refreshing the devices when out of support, Keeping the operating system up to date, Keeping monthly patches installed and current, Applying security patches immediately to close a vulnerability, Ensuring the availability of replacement devices"
+    },
+    {
+      "question": "What constitutes Industrialized mobile device?",
+      "answer": "Mobile handsets and tablets"
+    },
+    {
+      "question": "What are the devices offered for services based on mobile devices?",
+      "answer": "Tablets: Panasonic Toughpad (FZ-B2D204DBE) FZ-B2 MK2, Zebra ET55TT-G15E-00A6 Et55,\nMobile Handsets: Zebra TC75X, Samsung X Cover 4 Dark Silver SM-G390FZKABTU"
+    },
+    {
+      "question": "How much does Zebra TC75X TC75FK-2MB24AD-A6 costs?",
+      "answer": "Phone cost (as of 062018) = £1,305 and 3-year essential pack Z1AE-TC75XX-3C00 (as of 062018) = £269"
+    },
+    {
+      "question": "How much does Zebra ET55TT-G15E-00A6 Et55 costs?",
+      "answer": "Tablet cost (as of 062018) = £865 and Tablet 3-year essential Zebra Z1AE-ET5XXX-3C00 (as of 062018) = £310"
+    },
+    {
+      "question": "How much does Panasonic Toughpad (FZ-B2D204DBE) FZ-B2 MK2 costs?",
+      "answer": "Tablet cost (as of 062018) = £1,350 and Tablet 3-year warranty pack FZ-LESPAD3P (as of 062018) = £162"
+    },
+    {
+      "question": "How much does Samsung X Cover 4 Dark Silver SM-G390FZKABTU costs?",
+      "answer": "Phone cost (as of 062018) = £198 and 3 Years Support including Accidental Damage with £50 excess (as of 062018) = £169"
+    },
+    {
+      "question": "What are the configurations of Panasonic Toughpad (FZ-B2D204DBE) FZ-B2 MK2?",
+      "answer": "Panasonic Toughpad (FZ-B2D204DBE) FZ-B2 MK2 Standard with 4G, Strap, 2D BCR, Battery Hotswap, Dual Pass"
+    },
+    {
+      "question": "What are the configurations of Zebra ET55TT-G15E-00A6 Et55?",
+      "answer": "Zebra ET55TT-G15E-00A6 Et55, 10.1inch, Emea/Apac Only Wan/Wlan 802.11Ac, Android MGms, Z3745, 2Gb Ram, 32Gb Flash, Eng."
+    },
+    {
+      "question": "What are the configurations of Zebra TC75X TC75FK-2MB24AD-A6?",
+      "answer": "Zebra TC75X TC75FK-2MB24AD-A6: TC75X SE4750,1.3MP F/13MP R CAMERA, ANDROID, 4GB RAM/32GB FLASH, ROW, 2 SIM/, 1 MICRO SD, GMS, EMEA/APAC/CHILE/COSTARICA."
+    }
+  ]
+}

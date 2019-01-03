@@ -77,6 +77,13 @@
       "durable": true,
       "auto_delete": false,
       "arguments": {}
+    },
+    {
+      "name": "notification_queue",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
     }
   ],
   "exchanges": [
@@ -106,6 +113,15 @@
       "auto_delete": false,
       "internal": false,
       "arguments": {}
+    },
+    {
+      "name": "notification_exchange",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
     }
   ],
   "bindings": [
@@ -129,6 +145,14 @@
       "source": "bot_response_exchange",
       "vhost": "/",
       "destination": "bot_response_queue",
+      "destination_type": "queue",
+      "routing_key": "",
+      "arguments": {}
+    },
+    {
+      "source": "notification_exchange",
+      "vhost": "/",
+      "destination": "notification_queue",
       "destination_type": "queue",
       "routing_key": "",
       "arguments": {}

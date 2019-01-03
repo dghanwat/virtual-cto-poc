@@ -35,6 +35,8 @@ services:
     - MONGODB_USER=devroot
     - MONGODB_PASSWORD=devroot
     - MONGODB_PORT=27017
+    - NOTIFY_EXCHANGE=notification_exchange
+    - ENV CHAT_BASE_API_KEY=d57b42e4-d3b9-468d-b698-dbc1c106e76b
   networks:
     - devnetwork  
  ingestion-service:
@@ -53,7 +55,37 @@ services:
     - MONGODB_PASSWORD=devroot
     - MONGODB_PORT=27017
   networks:
-    - devnetwork  
+    - devnetwork
+ gmailkbclient:
+  build:
+    context: ./docker/gmailkbclient
+  environment:
+    - GMAIL_USER=lord.lewin.test@gmail.com
+    - GMAIL_PASSWORD=Atos@1234
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - RABBITMQ_EXCHANGE=ingestion_exchange
+    - RABBITMQ_VIRTUALHOST=/
+    - RABBITMQ_BOT_INCOMING_QUEUE=ingestion_queue
+  networks:
+    - devnetwork    
+ notification-service:
+  build:
+    context: ./docker/notification-service
+  environment:
+    - GMAIL_USER=lord.lewin.test@gmail.com
+    - GMAIL_PASSWORD=Atos@1234
+    - RABBITMQ_USER=admin
+    - RABBITMQ_PASSWORD=rabbitmqadmin
+    - RABBITMQ_SERVER=rabbitmq
+    - RABBITMQ_PORT=5672
+    - RABBITMQ_EXCHANGE=notification_exchange
+    - RABBITMQ_VIRTUALHOST=/
+    - RABBITMQ_BOT_INCOMING_QUEUE=notification_queue
+  networks:
+    - devnetwork    
  db-mongo:
   image: mongo:latest
   ports:

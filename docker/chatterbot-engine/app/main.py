@@ -7,13 +7,12 @@ import os
 from mongodb.dao import MongoDBDAO
 import logging
 logging.basicConfig(level=logging.INFO)
-
-
-
+from analytics.chatbasepublisher import ChatBasePublisher
 
 DEFAULT_RESPONSE = 'I am sorry, but I am not aware of this. I am still learning.'
-THRESHOLD = 0.80
+THRESHOLD = 0.65
 publisher = Publisher()
+chatbasepublisher = ChatBasePublisher()
 chatbot = ChatBot('Terminal',
                   storage_adapter='chatterbot.storage.MongoDatabaseAdapter',
                   logic_adapters=[
@@ -24,7 +23,7 @@ chatbot = ChatBot('Terminal',
                           'import_path': 'chatterbot.logic.MathematicalEvaluation'
                       }
                   ],
-                  database='bot_database',
+                  database='test_database',
                   database_uri='mongodb://'+os.environ["MONGODB_USER"]+':'+os.environ["MONGODB_PASSWORD"] +
                   '@'+os.environ["MONGODB_SERVER"] +
                   ':'+os.environ["MONGODB_PORT"]+'/'
@@ -55,11 +54,18 @@ def handleRabbitMQMessage(ch, method, properties, body):
         try:
             chatResponse = chatbot.get_response(incomingMessage["message"],properties.correlation_id)
             confidence = chatResponse.confidence
-            print("Confidence " , confidence)
-            if confidence > THRESHOLD:
+            if confidence >= THRESHOLD:
                 json_response = json.dumps({'response': chatResponse.serialize(), 'confidence': confidence})
+                chatResponseJson = json.loads(json_response)
+                chatbasepublisher.publish(incomingMessage["message"],chatResponseJson["response"]["text"],False,incomingMessage["userId"])
+                print("******************Eveything done")
             else: 
                 json_response = json.dumps({'response': {"text": DEFAULT_RESPONSE, "in_response_to": [], "extra_data": {}}, 'confidence': 0})
+                chatResponseJson = json.loads(json_response)
+                notifyMessage = '{"messageType":"notify_via_gmail","query":"'+incomingMessage["message"]+'"}'
+                publisher.publishNotifyMessage(notifyMessage, '')
+                chatbasepublisher.publish(incomingMessage["message"],chatResponseJson["response"]["text"],True,incomingMessage["userId"])
+                print("*********************Eveything done")
         except IndexError:
             json_response = json.dumps({'response': {"text": DEFAULT_RESPONSE, "in_response_to": [], "extra_data": {}}, 'confidence': 0})
        

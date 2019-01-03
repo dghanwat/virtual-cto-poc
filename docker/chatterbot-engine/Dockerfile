@@ -7,11 +7,12 @@ FROM alpine:edge
 
 ENV APP_HOME /var/chatterbot-engine/
 
-RUN apk update && apk add python py2-pip
+RUN apk update && apk add python py2-pip && apk add --no-cache bash git openssh
 RUN pip install pip --upgrade --user
 RUN pip install chatterbot
 RUN pip install pika
 RUN pip install pymongo
+RUN pip install git+git://github.com/google/chatbase-python.git
 RUN apk add --no-cache bash
 
 
@@ -32,6 +33,8 @@ ENV MONGODB_SERVER=192.168.99.100
 ENV MONGODB_USER=devroot
 ENV MONGODB_PASSWORD=devroot
 ENV MONGODB_PORT=27017
+ENV NOTIFY_EXCHANGE=notification_exchange
+ENV CHAT_BASE_API_KEY=d57b42e4-d3b9-468d-b698-dbc1c106e76b
 
 
 

@@ -1,0 +1,193 @@
+{
+  "messageType": "create_kb_item",
+  "kbItems": [
+    {
+      "question": "When was the policy regarding Mobile device refresh cycles created?",
+      "answer": "25th June 2018"
+    },
+    {
+      "question": "When was the policy regarding Mobile device refresh cycles updated?",
+      "answer": "25th June 2018"
+    },
+    {
+      "question": "Why was the policy regarding Mobile device refresh cycles created?",
+      "answer": "Mobile device refresh cycles policy has been created by Ryan Bryers to provide guidance on the approach to Mobile device refresh cycles for both consumer and industrial devices."
+    },
+    {
+      "question": "What is the need of policy regarding Mobile device refresh cycles?",
+      "answer": "Mobile device refresh cycles policy provides guidance on the approach to Mobile device refresh cycles for both consumer and industrial devices."
+    },
+    {
+      "question": "What is Mobile device refresh cycle?",
+      "answer": "Mobile device refresh cycles policy provides guidance on the approach to Mobile device refresh cycles for both consumer and industrial devices."
+    },
+    {
+      "question": "What does Mobile device refresh cycles policy contains?",
+      "answer": "Mobile device refresh cycles policy provides guidance on the approach to Mobile device refresh cycles for both consumer and industrial devices."
+    },
+    {
+      "question": "Who created Mobile device refresh cycles?",
+      "answer": "Mobile device refresh cycles policy has been created by Ryan Bryers."
+    },
+    {
+      "question": "Does the Mobile device refresh cycles policy provides guidance on the approach to Mobile device refresh cycles for both consumer and industrial devices.?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Is the policy regarding Mobile device refresh cycles for consumers or for industrial devices?",
+      "answer": "It is for both consumers or for industrial devices."
+    },
+    {
+      "question": "Is the policy regarding Mobile device refresh cycles for consumers?",
+      "answer": "It is for both consumers or for industrial devices."
+    },
+    {
+      "question": "Is the policy regarding Mobile device refresh cycles for industrial devices?",
+      "answer": "It is for both consumers or for industrial devices."
+    },
+    {
+      "question": "Who reviews the policy regarding Mobile device refresh cycles?",
+      "answer": "It is reviewed by TBA."
+    },
+    {
+      "question": "Is the policy regarding Mobile device refresh cycles reviewed?",
+      "answer": "Yes.It is reviewed by TBA."
+    },
+    {
+      "question": "What is the applicable location of the policy regarding Mobile device refresh cycles?",
+      "answer": "UK&I."
+    },
+    {
+      "question": "Is UK&I applicable location for Mobile device refresh cycles?",
+      "answer": "Yes."
+    },
+    {
+      "question": "What is Mobile device refresh policy?",
+      "answer": "When selling a solution that uses mobile devices (be that mobile handsets or tablets) there is a risk that the refresh cycle used is too long. Where a refresh cycle is used (to an end client) that is too long the solution will spend time out of support as the majority of vendors will deprecate handsets and tablets within a 2-year period. This principle offers guidance on the refresh cycles for both commercial and industrial mobile devices so that Worldline does not carry an unacceptable risk."
+    },
+    {
+      "question": "What does Mobile device refresh policy contain?",
+      "answer": "When selling a solution that uses mobile devices (be that mobile handsets or tablets) there is a risk that the refresh cycle used is too long. Where a refresh cycle is used (to an end client) that is too long the solution will spend time out of support as the majority of vendors will deprecate handsets and tablets within a 2-year period. This principle offers guidance on the refresh cycles for both commercial and industrial mobile devices so that Worldline does not carry an unacceptable risk."
+    },
+    {
+      "question": "What does Mobile device refresh policy refers to?",
+      "answer": "When selling a solution that uses mobile devices (be that mobile handsets or tablets) there is a risk that the refresh cycle used is too long. Where a refresh cycle is used (to an end client) that is too long the solution will spend time out of support as the majority of vendors will deprecate handsets and tablets within a 2-year period. This principle offers guidance on the refresh cycles for both commercial and industrial mobile devices so that Worldline does not carry an unacceptable risk."
+    },
+    {
+      "question": "Does Mobile device refresh policy helps in risk management for Worldline?",
+      "answer": "Yes."
+    },
+    {
+      "question": "Is the mobile market considered as immature market?",
+      "answer": "Yes.The mobile market (covering mobile phone handsets and tablets) is an immature market that is evolving considerably faster than the more mature market of windows devices (laptops & desktops). It is not unusual for a provider like Samsung, Lenovo, Sony or Asus to issue a flagship product in one year then supersede it the following year and move to deprecate it within 2 years of launch. Samsung is traditionally quite brutal in this area."
+    },
+    {
+      "question": "Is the mobile market evolving faster than the market of windows devices?",
+      "answer": "Yes.The mobile market (covering mobile phone handsets and tablets) is an immature market that is evolving considerably faster than the more mature market of windows devices (laptops & desktops). It is not unusual for a provider like Samsung, Lenovo, Sony or Asus to issue a flagship product in one year then supersede it the following year and move to deprecate it within 2 years of launch. Samsung is traditionally quite brutal in this area."
+    },
+    {
+      "question": "Why should we be cognisant of the pace of deprecation of consumer mobile devices when offering clients solutions?",
+      "answer": "We have to be cognisant of the pace of deprecation of consumer mobile devices (phone, handsets and tablets) when offering clients solutions as we become responsible for maintaining the devices for the contracted period yet we may have little influence or control."
+    },
+    {
+      "question": "What are we responsible for while offering clients solutions?",
+      "answer": "we become responsible for :Keeping pace with the Operating System versions, Ensuring replacement hardware can be purchased, Patching vulnerabilities as they occur and Alignment to MDM software."
+    },
+    {
+      "question": "Are we responsible for Keeping pace with the Operating System versions while offering client solutions?",
+      "answer": "Yes.We are responsible for Keeping pace with the Operating System versions."
+    },
+    {
+      "question": "Are we responsible for Ensuring replacement hardware to be purchased while offering client solutions?",
+      "answer": "Yes.We are responsible for Ensuring replacement hardware to be purchased."
+    },
+    {
+      "question": "Are we responsible for Patching vulnerabilities as they occur while offering client solutions?",
+      "answer": "Yes.We are responsible for Patching vulnerabilities as they occur."
+    },
+    {
+      "question": "Are we responsible for Alignment to MDM software while offering client solutions?",
+      "answer": "Yes.We are responsible for Alignment to MDM software."
+    },
+    {
+      "question": "did worldline ever faced challenges of maintaining out of date hardware?",
+      "answer": "Yes.We have on a number of accounts faced challenges of maintaining out of date hardware, being unable to upgrade a device to a newer operating system and more critically being unable to obtain security patches in a timely manner (or at all) for globally recognised vulnerabilities (BlueBourne, WannaCry, Meltdown, Spectre etc). This has been a significant issue on the consumer devices that have thus far supported our products in the market place."
+    },
+    {
+      "question": "did worldline ever faced challenges of being unable to upgrade a device to a newer operating system?",
+      "answer": "Yes.We have on a number of accounts faced challenges of maintaining out of date hardware, being unable to upgrade a device to a newer operating system and more critically being unable to obtain security patches in a timely manner (or at all) for globally recognised vulnerabilities (BlueBourne, WannaCry, Meltdown, Spectre etc). This has been a significant issue on the consumer devices that have thus far supported our products in the market place."
+    },
+    {
+      "question": "did worldline ever faced challenges of being unable to obtain security patches in a timely manner?",
+      "answer": "Yes.We have on a number of accounts faced challenges of maintaining out of date hardware, being unable to upgrade a device to a newer operating system and more critically being unable to obtain security patches in a timely manner (or at all) for globally recognised vulnerabilities (BlueBourne, WannaCry, Meltdown, Spectre etc). This has been a significant issue on the consumer devices that have thus far supported our products in the market place."
+    },
+    {
+      "question": "What is a consumer Device?",
+      "answer": "A consumer device is a device that is sold mass market to the general public but are also available for use in support of Worldline products & Solutions. A consumer device is generally issued by a provider (Samsung, Lenovo, Sony, Asus etc) and then surpassed by a newer market offering within a year, the provider will normally offer support and patches to the newest device (N) and the previous version (N-1). Once the device you have becomes N-2 (ie is surpassed by 2 devices in the range) the provider will deprecate the model and offer no support of any real value. The provider at this point will lose its desire to support the older models which means no new operating system versions, no new patches and no security fixes."
+    },
+    {
+      "question": "Define consumer Device?",
+      "answer": "A consumer device is a device that is sold mass market to the general public but are also available for use in support of Worldline products & Solutions. A consumer device is generally issued by a provider (Samsung, Lenovo, Sony, Asus etc) and then surpassed by a newer market offering within a year, the provider will normally offer support and patches to the newest device (N) and the previous version (N-1). Once the device you have becomes N-2 (ie is surpassed by 2 devices in the range) the provider will deprecate the model and offer no support of any real value. The provider at this point will lose its desire to support the older models which means no new operating system versions, no new patches and no security fixes."
+    },
+    {
+      "question": "What does a consumer Device mean?",
+      "answer": "A consumer device is a device that is sold mass market to the general public but are also available for use in support of Worldline products & Solutions. A consumer device is generally issued by a provider (Samsung, Lenovo, Sony, Asus etc) and then surpassed by a newer market offering within a year, the provider will normally offer support and patches to the newest device (N) and the previous version (N-1). Once the device you have becomes N-2 (ie is surpassed by 2 devices in the range) the provider will deprecate the model and offer no support of any real value. The provider at this point will lose its desire to support the older models which means no new operating system versions, no new patches and no security fixes."
+    },
+    {
+      "question": "What do you mean by consumer Device?",
+      "answer": "A consumer device is a device that is sold mass market to the general public but are also available for use in support of Worldline products & Solutions. A consumer device is generally issued by a provider (Samsung, Lenovo, Sony, Asus etc) and then surpassed by a newer market offering within a year, the provider will normally offer support and patches to the newest device (N) and the previous version (N-1). Once the device you have becomes N-2 (ie is surpassed by 2 devices in the range) the provider will deprecate the model and offer no support of any real value. The provider at this point will lose its desire to support the older models which means no new operating system versions, no new patches and no security fixes."
+    },
+    {
+      "question": "What is meant by a consumer Device?",
+      "answer": "A consumer device is a device that is sold mass market to the general public but are also available for use in support of Worldline products & Solutions. A consumer device is generally issued by a provider (Samsung, Lenovo, Sony, Asus etc) and then surpassed by a newer market offering within a year, the provider will normally offer support and patches to the newest device (N) and the previous version (N-1). Once the device you have becomes N-2 (ie is surpassed by 2 devices in the range) the provider will deprecate the model and offer no support of any real value. The provider at this point will lose its desire to support the older models which means no new operating system versions, no new patches and no security fixes."
+    },
+    {
+      "question": "What is the maximum time between refreshes when offering a solution based on a consumer device?",
+      "answer": "when offering a solution based on a consumer device the maximum time between refreshes is 2-years for a consumer device. This period can be volatile depending on where the device is in the provider's cycle (N, N-1). The volatility can cause major difficulties with a business case where Worldline is responsible for procuring the device and offering a managed service to the end client."
+    },
+    {
+      "question": "Does the Mobile device refresh policy means we purchase the devices?",
+      "answer": "The recommendation of the principle is not to be responsible for the device or the refresh policy of the device, this means we do not purchase the devices."
+    },
+    {
+      "question": "How to achieve Mobile device refresh policy on commercial devices?",
+      "answer": "1.Recommend to the client that they procure the mobile device to be used based on devices we have tested against (ie what we warrant our software against).\na)if the client isn't prepared to purchase their own devices then recommend the industrial devices (see further down).\ni) if a client isn't open to industrial devices then escalate to the RBU B CTO using the Exceptions request template.\n 2. Offer them suggestions based on the device they choose as to the initial and subsequent refresh cycles.a) the initial refresh may be sooner than 2-years if the device is already in an N-1 situation.\nb) our suggestions cannot be construed as advice or guidance and we must not be responsible for the refresh.\n3. In the contract it needs to be clear that the ownership of the hardware, the software on the device (with the exception of our apps and any MDM we provide) and the availability for upgrades and patches becomes a client responsibility/risk.\n 4. We can offer them an MDM service to the devices the client provides but it needs to be clear that we are simply able to use the MDM software to control configuration of the devices and deploy software that is made available from the providers (or our own apps). It will not be our role to own the relationship with the device providers as we will simply provide upgrades and patches as they become available in the market place."
+    },
+    {
+      "question": "What is the maximum time between refreshes when offering a solution based on a industrialized device?",
+      "answer": "Typically a refresh cycle can be around 4-years but the provider will tell you what they are able to offer as each device is normally different."
+    },
+    {
+      "question": "What are industrialized devices?",
+      "answer": "An industrialized devices (mobile handset or tablet) is not purchased from a mainstream consumer provider but is offered from a provider that creates the devices for use by people like us offering services (and being responsible for that service. The devices traditionally come with a higher cost than the commercial devices but they have a longer time between refresh as the provider is making the devices to support business not consumers. In addition they are normally more rugged and offer more capability such as ethernet ports."
+    },
+    {
+      "question": "What is meant by industrialized devices?",
+      "answer": "An industrialized devices (mobile handset or tablet) is not purchased from a mainstream consumer provider but is offered from a provider that creates the devices for use by people like us offering services (and being responsible for that service. The devices traditionally come with a higher cost than the commercial devices but they have a longer time between refresh as the provider is making the devices to support business not consumers. In addition they are normally more rugged and offer more capability such as ethernet ports."
+    },
+    {
+      "question": "Define industrialized devices?",
+      "answer": "An industrialized devices (mobile handset or tablet) is not purchased from a mainstream consumer provider but is offered from a provider that creates the devices for use by people like us offering services (and being responsible for that service. The devices traditionally come with a higher cost than the commercial devices but they have a longer time between refresh as the provider is making the devices to support business not consumers. In addition they are normally more rugged and offer more capability such as ethernet ports."
+    },
+    {
+      "question": "What do you mean by industrialized devices?",
+      "answer": "An industrialized devices (mobile handset or tablet) is not purchased from a mainstream consumer provider but is offered from a provider that creates the devices for use by people like us offering services (and being responsible for that service. The devices traditionally come with a higher cost than the commercial devices but they have a longer time between refresh as the provider is making the devices to support business not consumers. In addition they are normally more rugged and offer more capability such as ethernet ports."
+    },
+    {
+      "question": "What does industrialized devices mean?",
+      "answer": "An industrialized devices (mobile handset or tablet) is not purchased from a mainstream consumer provider but is offered from a provider that creates the devices for use by people like us offering services (and being responsible for that service. The devices traditionally come with a higher cost than the commercial devices but they have a longer time between refresh as the provider is making the devices to support business not consumers. In addition they are normally more rugged and offer more capability such as ethernet ports."
+    },
+    {
+      "question": "What is the strategy used before selling a solution to client?",
+      "answer": "As a strategy we must not become responsible for the hardware, operating system and software of a Consumer mobile (mobile handsets & tablets) device, we should ensure that this responsibility sits with the client. We can offer an MDM service but that solely means we offer the capabilities of the MDM software and the ability to distribute upgrades and patches as provided by the device provider (Samsung, Lenovo, Sony, Asus etc). Where a client will not own this risk/responsibility Worldline will offer the client an Industrialized device as we are able to offer a full service wrap in that manner.."
+    },
+    {
+      "question": "What if client accepts neither approach?",
+      "answer": "If the client will accept neither approach then raise an Exception request to the CTO."
+    },
+    {
+      "question": "When should anyone raise an Exception request to CTO?",
+      "answer": "If the client will accept neither approach then raise an Exception request to the CTO."
+    }
+  ]
+}

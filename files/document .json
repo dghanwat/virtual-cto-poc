@@ -1,0 +1,153 @@
+{
+  "messageType": "create_kb_item",
+  "kbItems": [
+    {
+      "question": "What is the need of Automation and Orchestration",
+      "answer": "Automation and Orchestration are employed to deliver the business goals of increasing QUALITY, PACE and PRODUCTIVITY. By automation and orchestration we can ensure the repeat-ability of processes ensuring that quality is consistent. It also frees up people from doing low value tasks to be able to spend their time of high-value delivery. It also improves the efficiency of process so that the process lifecycle is shorter."
+    },
+    {
+      "question": "What is Orchestration",
+      "answer": "Orchestration is the automation of a process by means of script or tool, linking together various automation tasks."
+    },
+    {
+      "question": "What is need of automation",
+      "answer": " It reduces effort required, increases quality through repeatability, and increases productivity."
+    },
+    {
+      "question": "Which are the areas where automation is applied",
+      "answer": "Business Driven Development (BDD), Test Driven Development (TDD), The Continuous Integration & Deplyment (CI/CD) pipelines, Infrastructure as Code (IaC)."
+    },
+    {
+      "question": "What is full form of BDD",
+      "answer": "Business Driven Development (BDD) - all code that is written is supported buy an automation test (QA Automation) so that the system can be tested from a business case/use case perspective."
+    },
+    {
+      "question": "Which tools/techniques comes under BDD ",
+      "answer": "The tooling of Selenium, Cucumber & Gherkin support the BDD process"
+    },
+    {
+      "question": "What is Selenium",
+      "answer": "Selenium is a portable software-testing framework for web applications. Selenium provides a playback (formerly also recording) tool for authoring tests without the need to learn a test scripting language (Selenium IDE)."
+    },
+    {
+      "question": "What is Cucumber",
+      "answer": "Cucumber is a software tool used by computer programmers for testing other software. It runs automated acceptance tests written in a behavior-driven development (BDD) style. Central to the Cucumber BDD approach is its plain language parser called Gherkin"
+    },
+    {
+      "question": "What is Gherkin",
+      "answer": "Gherkin is the language that Cucumber uses to define test cases. It is designed to be non-technical and human readable, and collectively describes use cases relating to a software system. The purpose behind Gherkin's syntax is to promote behavior-driven development practices across an entire development team, including business analysts and managers"
+    },
+    {
+      "question": "What is full form of TDD",
+      "answer": "Test Driven Development (TDD) - TDD will be used to ensure that unit tests are written before any code is written from the tasks defined in Jira. This means a high code coverage of Unit tests (for new or changed code) aiming to exceed 85%. The benefit being each piece of code can be assured to be correct"
+    },
+    {
+      "question": "Which tools/techniques comes under TDD ",
+      "answer": "Jira is the tool under the category TDD"
+    },
+    {
+      "question": "What is Jira",
+      "answer": "Jira is a proprietary issue tracking product developed by Atlassian which allows bug tracking and agile project management."
+    },
+    {
+      "question": "What is full form of CI/CD",
+      "answer": "The Continuous Integration & Deplyment (CI/CD) pipelines - these are too detailed to explain in this note and they link to the 'Process' principle. Fundamentally the tools used in CI/CD are all built through automation.Tools used under CI/CD are Github, Jenkins, Sonar, Nexus"
+    },
+    {
+      "question": "Which tools comes under CI/CD",
+      "answer": "Tools used under CI/CD are Github, Jenkins, Sonar, Nexus"
+    },
+    {
+      "question": "What is Github",
+      "answer": "GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.Its a tool used in CI/CD."
+    },
+    {
+      "question": "What is Jenkins",
+      "answer": "Jenkins is an open source automation server written in Java. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery.Its a tool used in CI/CD."
+    },
+    {
+      "question": "What is Sonar",
+      "answer": "SonarQube (formerly Sonar) is an open source platform for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities on 20+ programming languages."
+    },
+    {
+      "question": "What is Nexus",
+      "answer": "Store and distribute Maven/Java, npm, NuGet, RubyGems, Docker, P2, OBR, APT and YUM and more. Manage components from dev through delivery: binaries, containers, assemblies, and finished goods."
+    },
+    {
+      "question": "What is full from of IaC",
+      "answer": "Infrastructure as Code (IaC) - the build of all infrastructure will use scripts developed between PS & CTO Group using Terraform, Ansible, Puppet and Octopus Deploy."
+    },
+    {
+      "question": "Which are the different tools/techniques in Iac",
+      "answer": "Terraform,Puppet,Ancible,Octopus Deploy"
+    },
+    {
+      "question": "What is Terraform",
+      "answer": "Terraform is an infrastructure as code software by HashiCorp. It allows users to define a datacenter infrastructure in a high-level configuration language, from which it can create an execution plan to build the infrastructure such as OpenStack or in a service provider such as AWS, Microsoft Azure, Google Cloud Platform, IBM Cloud (formerly Bluemix), Oracle Cloud Infrastructure, or VMware vSphere Infrastructure is defined in a HCL Terraform syntax or JSON format."
+    },
+    {
+      "question": "What is Puppet",
+      "answer": "Puppet is an open-source software configuration management tool. It runs on many Unix-like systems as well as on Microsoft Windows, and includes its own declarative language to describe system configuration."
+    },
+    {
+      "question": "What is Ancible",
+      "answer": "Ansible is open source software that automates software provisioning, configuration,management, and application deployment. Ansible connects via SSH, remote PowerShell or via other remote APIs."
+    },
+    {
+      "question": "What is Octopus Deploy",
+      "answer": "Octopus Deploy is an automated release management tool for modern developers and DevOps teams for Microsoft Windows."
+    },
+    {
+      "question": "What are microservices",
+      "answer": "APIs can be further broken down into mircoservices which is a software development technique (a variant of the service-oriented architecture (SOA) architectural style) that structures an application as a collection of loosely coupled services. In a microservices architecture, services are fine-grained"
+    },
+    {
+      "question": "What is the benefit of decomposing an application",
+      "answer": " The benefit of decomposing an application into different smaller services is that it improves modularity and makes the application easier to understand, develop, and test and more resilient to architecture erosion. It parallelises development by enabling small autonomous teams to develop, deploy and scale their respective services independently, thus breaking the traditional monolith application and lengthy release cycles. Micro services architectures enable continuous delivery and deployment"
+    },
+    {
+      "question": "Purpose of APIs",
+      "answer": "APIs provide an abstraction layer over our new and existing (legacy) solutions which can then be consumed by either new products, new feature offerings or even offerings to clients (internal and external) in their own right.APIs allow a faster time to market thus enabling business agility though the exposure of new and existing functional capabilities "
+    },
+    {
+      "question": "Why do we need APIs",
+      "answer": "A mechanism needs to exist to expose capabilities (logic) within both new solutions (and products) and enable the reuse and enhancement of our existing solutions (and products) to utilise their capabilities. APIs are the mechanism to provide this exposure."
+    },
+    {
+      "question": "How to evolve the way of working",
+      "answer": "Since 2015 we have focused on how we can adjust our approach to development so that we are running in 3-Speeds, to assume that a single speed will support our business is unrealistic. This means that we still have a place for more traditional Waterfall based methods but we also accept that some older solutions will adjust and evolve their way of working as they adopt principles of agility, cloud, automation and DevOps with anything new focused solely in a DevOps manner. "
+    },
+    {
+      "question": "What are the key pillars of strategy",
+      "answer": "People-Process-Technology."
+    },
+    {
+      "question": "Approaches beneficial for business",
+      "answer": "We have for a number of years now started to adopt/adapt new tools/technologies both in-house (eg. Kazan, NZP) as well as external (eg. Atlassian, Github, LucidChart) and in the last 12-18n months moved to the forefront of cloud adoption in AWS and FinancialForce. We have seen a significant uptake in automation across operations, applications & testing to fit in with DevOps approaches, these approaches have led to more repeatably, good re-use and pace enablement to the business. The problem is the automation is not widely used and is focused on a small set of people, this must change and widen the availability to the whole of the UK. We have also built a lot of supporting process and knowledge through the UK's leadership of the Right First Time team i206 track since the start of 2017, again this knowledge is still controlled by a relatively small number of people."
+    },
+    {
+      "question": "Languages focused by wordline",
+      "answer": "One of the key debates that has raged since Worldline was IPO'd from Atos has been development languages and specifically which we focus on. Worldline on a global basis is focused on Java with the majority of the tooling, skills and expertise focused on Java. The UK is and always has been much different with more solutions in .Net flavours than Java and plenty of VB and other older technologies still in place. so whilst the answer is simple that we have to accommodate both .Net and Java and also focus on emerging languages such as Scala development isn't just limited to core business logic languages. Therefore the strategy takes into account the need to focus on languages for presentation, mobile, automation and data science."
+    },
+    {
+      "question": "What is required to make strategy successful/achievable",
+      "answer": " For our strategy to make sense and be achievable as a business enabler our people (current and future) will need to be equipped with the right skills at the right time to use the technologies and tools under the defined process and way of working. This means that training strategies at both the UK and LBL level will use the strategy as a guide to ensure our people are trained correctly and offer them paths of evolution in terms of their careers."
+    },
+    {
+      "question": "On waht does the global sourcing model focus",
+      "answer": " The global sourcing model focuses on the partners we have, the skills and capabilities they are able to offers us, guidance on where a partners fits or doesn't fit and of course the all important rate card."
+    },
+    {
+      "question": "What does the strategy define",
+      "answer": " The strategy defines what our core principles for development are, how we can offer assessment and paths to improve existing solutions or products and what is expected of anything done on a greenfield basis."
+    },
+    {
+      "question": "What is the Primary approach for development to delivery",
+      "answer": "We have pushed harder into Cloud than any other group in Worldline and the wider Atos family, to this end we are recognised as the go to people in Cloud and its supporting tooling. It is our primary appproach for development from development to delivery. Key Principle is Cloud "
+    },
+    {
+      "question": "what is purpose of business services through APIs",
+      "answer": "the creation of business services through API's, this makes the front end of our solutions thinner and focused on UI/UX (display) principles in the main. We may or may not want to create the front end and focus a business strategy on selling the API layer (and offer the end clients the ability to develop their branded UI to our API's) on a transactional basis."
+    }
+  ]
+}
