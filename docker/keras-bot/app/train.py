@@ -7,6 +7,7 @@ from json import load
 from pickle import dump
 from keras.models import Sequential
 from keras.layers import Dense
+from sklearn.metrics import classification_report
 
 def parseDump():
     with open('FAQ_db.json') as json_data:
@@ -66,12 +67,14 @@ def parseDump():
 def trainModel():
     # Build model
     model = Sequential()
-    model.add(Dense(8, activation='relu', input_shape=(len(vocabulary), )))
-    model.add(Dense(8, activation='relu'))
+    model.add(Dense(64, activation='relu', input_shape=(len(vocabulary), )))
+    model.add(Dense(64, activation='relu'))
     model.add(Dense(y_train.shape[1], activation='softmax'))
     # Train Model
     model.compile(loss='categorical_crossentropy', optimizer='RMSprop', metrics=['accuracy'])
-    model.fit(x_train, y_train, batch_size=8, epochs=1000, verbose=1)
+    model.fit(x_train, y_train, batch_size=16, epochs=2000, verbose=1)
+    scores = model.evaluate(x_train, y_train, verbose=1)
+    print("%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
     return model
 
 ignored = ['?']

@@ -27,13 +27,19 @@ def getQueryFeatures(query):
 def startProcessing():
     # print("Type something to begin...")
     # query = input('Ask me a question? ')
-    query = "hello"
+    query = "can you explain functional programming"
+    # query = "why is functional programming so popular"
     queryBag = getQueryFeatures(query)
-    print(model.predict(queryBag)[0])
-    print(argmax(model.predict(queryBag)))
+    # print(model.predict(queryBag))
     idx = argmax(model.predict(queryBag))
-    print(model.predict_proba(queryBag))
-    print(choice(intentsDict[classes[idx]]))
+    # print("idx" , idx)
+    print("Mapped to Intent" , classes[idx])
+    print("Prediction Probablity", model.predict(queryBag)[0][idx])
+    if model.predict(queryBag)[0][idx] >= 0.89:
+        print(choice(intentsDict[classes[idx]]))
+    else:
+        print("Sorry, I am not able to answer this question")
+
    
     
 

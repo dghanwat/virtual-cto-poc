@@ -106,6 +106,24 @@
             "responses": [
                 "You can call at #XXXX# to reach the EE office"
             ]
+        },
+        {
+            "tag": "functionalprogramming",
+            "patterns": [
+                "what is functional programming?"
+            ],
+            "responses": [
+                "Functional programming is a programming paradigm in which we try to bind everything in pure mathematical functions style. It is a declarative type of programming style. Its main focus is on 'what to solve' in contrast to an imperative style where the main focus is 'how to solve'."
+            ]
+        },
+        {
+            "tag": "functionalprogramming_benefits",
+            "patterns": [
+                "why is functional programming so popular?"
+            ],
+            "responses": [
+                "Functional languages use a different paradigm than imperative and object-oriented languages. They use side-effect-free functions as a basic building block in the language. This enables lots of things and makes a lot of things more difficult (or in most cases different from what people are used to)."
+            ]
         }
     ]
 }
