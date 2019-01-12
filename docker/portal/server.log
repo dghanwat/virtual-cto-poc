@@ -8163,3 +8163,7 @@ Error: Route.post() requires a callback function but got a [object Undefined]
 [INFO] - [2019-01-11T14:29:31.187Z] : RabbitMq: Connection virtualctorabbitmq opened
 [INFO] - [2019-01-11T14:39:14.720Z] : RabbitMq: Connection virtualctorabbitmq closed
 [INFO] - [2019-01-11T14:39:14.721Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-12T14:31:18.451Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-12T14:31:18.455Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-12T14:31:26.093Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-12T14:31:26.100Z] : RabbitMq: Connection virtualctorabbitmq opened

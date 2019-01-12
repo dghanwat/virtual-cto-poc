@@ -16,46 +16,47 @@ import matplotlib.pyplot as plt
 from keras.optimizers import SGD
 import json
 from pickle import dump
+import os
 
 
 EPOCHS = 1000
-
+__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 class Training:
 
     def __init__(self):
         print("In constructor")
         self.ignored = ['?']
         
-    def train(self):
-        with open('intents.json') as json_data:
-            kbItems = json.load(json_data)
-            words = []
-            classes = []
-            documents = []
-            ignore_words = ['?']
-            # loop through each sentence in our intents patterns
-            for kbItem in kbItems['kbItems']:
-                for pattern in kbItem['patterns']:
-                    # tokenize each word in the sentence
-                    w = nltk.word_tokenize(pattern)
-                    # add to our words list
-                    words.extend(w)
-                    # add to documents in our corpus
-                    documents.append((w, kbItem['intent']))
-                    # add to our classes list
-                    if kbItem['intent'] not in classes:
-                        classes.append(kbItem['intent'])
+    def train(self,dbKBItems):
+        # with open('intents.json') as json_data:
+        kbItems = json.loads(dbKBItems)
+        words = []
+        classes = []
+        documents = []
+        ignore_words = ['?']
+        # loop through each sentence in our intents patterns
+        for kbItem in kbItems['kbItems']:
+            for pattern in kbItem['patterns']:
+                # tokenize each word in the sentence
+                w = nltk.word_tokenize(pattern)
+                # add to our words list
+                words.extend(w)
+                # add to documents in our corpus
+                documents.append((w, kbItem['intent']))
+                # add to our classes list
+                if kbItem['intent'] not in classes:
+                    classes.append(kbItem['intent'])
 
-                    # stem and lower each word and remove duplicates
-                    words = [stemmer.stem(w.lower()) for w in words if w not in ignore_words]
-                    words = sorted(list(set(words)))
+                # stem and lower each word and remove duplicates
+                words = [stemmer.stem(w.lower()) for w in words if w not in ignore_words]
+                words = sorted(list(set(words)))
 
-                    # remove duplicates
-                    classes = sorted(list(set(classes)))
+                # remove duplicates
+                classes = sorted(list(set(classes)))
 
-            print (len(documents), "documents")
-            print (len(classes), "classes", classes)
-            print (len(words), "unique stemmed words", words)
+        print (len(documents), "documents")
+        print (len(classes), "classes", classes)
+        print (len(words), "unique stemmed words", words)
 
         # create our training data
         training = []
@@ -110,8 +111,8 @@ class Training:
         plt.xlabel("# Epoch")
         plt.ylabel("Loss/Accuracy")
         plt.legend()
-        plt.savefig("output/fig.png")
+        plt.savefig(__location__ + "fig.png")
 
-        model.save('model_ChatBot.h5')
-        with open('vars.pkl', 'wb') as f:
+        model.save(__location__ + '\\model_ChatBot.h5')
+        with open(__location__ + '\\vars.pkl', 'wb') as f:
             dump([words, classes, self.ignored, kbItems], f)

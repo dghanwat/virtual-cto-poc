@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   BOT: string = "BOT";
   HUMAN: string = "HUMAN";
   asyncMesgId:any;
-  THRESHOLD:number = 0.60;
+  THRESHOLD:number = 0.75;
   userId: string;
 
   constructor(private botService: AngularAutobotService,
@@ -32,10 +32,10 @@ export class HomeComponent implements OnInit {
       this.showWelcomeMessages('Hello There', this.BOT);
     }, 1000);
     setTimeout(() => {
-      this.showWelcomeMessages('This is Lord Lewin here. I am your Virtual CTO Bot', this.BOT)
+      this.showWelcomeMessages('This is Lord Lewin here. I am your Virtual Team Member', this.BOT)
     }, 2000);
     setTimeout(() => {
-      this.showWelcomeMessages('I can help you with answers for general queries regarding WL UK CTO Group ', this.BOT)
+      this.showWelcomeMessages('I can help you with answers for general queries', this.BOT)
     }, 3000);
     this.askTextInputQuestion(this.botId, 4000);
   }
@@ -106,7 +106,6 @@ export class HomeComponent implements OnInit {
               // let formattedContent = res.message.content.replace("([^\.]*?)",)
               this.updateContent(botId, asyncMesgId, formattedContent, 1);
               if(res.message.confidence < this.THRESHOLD) {
-                this.showWelcomeMessages('<a href="/human" target="_blank">Click here to speak to a real person</a>', this.BOT);
                 this.showWelcomeMessages('I promise, I would have learnt the response when you come here next time', this.BOT);
               }
               this.askTextInputQuestion(botId, 1);
