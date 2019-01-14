@@ -21,9 +21,14 @@ ERROR_THRESHOLD = 0.75
 def processTraining():
     mongoDBDAO = MongoDBDAO()
     kbItems = mongoDBDAO.selectAllKBItems()
-    training.train(kbItems)
-    predict.loadModel()
-    print("[INFO] Training Completed")
+    kbArray = json.loads(kbItems)
+    print("KB items",kbArray['kbItems'])
+    if len(kbArray['kbItems']) > 0:
+        training.train(kbItems)
+        predict.loadModel()
+        print("[INFO] Training Completed")
+    else:
+        print("[INFO] No KB to train")
 
 def handleRabbitMQMessage(ch, method, properties, body):
     print(" [x] %r" % body)

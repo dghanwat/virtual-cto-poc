@@ -1,1 +1,5 @@
 <span [autobotMarkdown]="msg.content"></span>
+<span class="pull-right feedback-icon" *ngIf="msg.showFeedBackIcons">
+    <i class="fa fa-thumbs-up" id="bot-message-thumbs-up" (click)="handleThumbsUp($event)"></i>&nbsp;&nbsp;
+    <i class="fa fa-thumbs-down" id="bot-message-thumbs-down" (click)="handleThumbsDown($event)"></i>
+</span>

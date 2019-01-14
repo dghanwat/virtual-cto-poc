@@ -16,15 +16,15 @@ export class HomeComponent implements OnInit {
   botId: string = 'bot1';
   BOT: string = "BOT";
   HUMAN: string = "HUMAN";
-  asyncMesgId:any;
-  THRESHOLD:number = 0.75;
+  asyncMesgId: any;
+  THRESHOLD: number = 0.75;
   userId: string;
 
   constructor(private botService: AngularAutobotService,
     private chatService: ChatService,
     public toast: ToastComponent) {
-      this.userId = '_' + Math.random().toString(36).substr(2, 9);
-     }
+    this.userId = '_' + Math.random().toString(36).substr(2, 9);
+  }
 
 
   ngOnInit() {
@@ -37,7 +37,24 @@ export class HomeComponent implements OnInit {
     setTimeout(() => {
       this.showWelcomeMessages('I can help you with answers for general queries', this.BOT)
     }, 3000);
+    setTimeout(() => {
+      this.showEmbeddedContent()
+    }, 3500);
     this.askTextInputQuestion(this.botId, 4000);
+  }
+
+  showEmbeddedContent() {
+    const asyncMesgId = this.botService.bot(this.botId).addBotMessage({
+      id: uuidv1(),
+      type: 'embed',
+      visible: true,
+      loading: true,
+      content: 'https://www.youtube.com/embed/ZRBH5vHhm4c?autoplay=1',
+      human: false,
+      created_date: new Date(),
+      showFeedBackIcons:true
+    });
+    this.doneLoading(this.botId, asyncMesgId, 500);
   }
 
   showWelcomeMessages(content, from) {
@@ -48,7 +65,8 @@ export class HomeComponent implements OnInit {
       loading: true,
       content: content,
       human: false,
-      created_date: new Date()
+      created_date: new Date(),
+      showFeedBackIcons:false
     });
     this.doneLoading(this.botId, asyncMesgId, 500);
   }
@@ -61,7 +79,8 @@ export class HomeComponent implements OnInit {
       loading: true,
       content: content,
       human: false,
-      created_date: new Date()
+      created_date: new Date(),
+      showFeedBackIcons:true
     });
     return asyncMesgId;
   }
@@ -95,30 +114,30 @@ export class HomeComponent implements OnInit {
           const chatMessage: ChatMessage = new ChatMessage();
           chatMessage._id = uuidv1();
           chatMessage.message = res;
-          chatMessage.messageType="chat"
+          chatMessage.messageType = "chat"
           chatMessage.userId = this.userId
           this.chatService.chat(chatMessage).subscribe(
             res => {
               // Once we get the Response from the server 
               this.doneLoading(botId, asyncMesgId, 1);
-              let formattedContent = res.message.content.replace(/(\.(\s+))/g, '\$1 <br /><br />');
+              let formattedContent = res.message.content.replace(/(\.(\s+))/g, '\$1 <br />');
               formattedContent = this.linkify(formattedContent);
               // let formattedContent = res.message.content.replace("([^\.]*?)",)
               this.updateContent(botId, asyncMesgId, formattedContent, 1);
-              if(res.message.confidence < this.THRESHOLD) {
+              if (res.message.confidence < this.THRESHOLD) {
                 this.showWelcomeMessages('I promise, I would have learnt the response when you come here next time', this.BOT);
               }
               this.askTextInputQuestion(botId, 1);
               setTimeout(() => {
                 let inputField = <NodeListOf<HTMLElement>>document.querySelectorAll('.botui-actions-text-input');
                 inputField[0].focus();
-              },100)
-              
+              }, 100)
+
               // then again ask for next Text Input question
               this.askTextInputQuestion(this.botId, 2500);
               // OR
               // this.askButtonQuestion(this.botId, 2500);
-              
+
             },
             error => this.toast.setMessage('Ooops Something went wrong with the bot', 'danger')
           );
@@ -184,6 +203,6 @@ export class HomeComponent implements OnInit {
     replacedText = replacedText.replace(replacePattern3, '<a href="mailto:$1">$1</a>');
 
     return replacedText;
-}
+  }
 }
 

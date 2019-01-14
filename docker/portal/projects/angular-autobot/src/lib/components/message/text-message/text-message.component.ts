@@ -11,4 +11,12 @@ export class TextMessageComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  handleThumbsDown(event) {
+
+  }
+
+  handleThumbsUp(event){
+
+  }
 }

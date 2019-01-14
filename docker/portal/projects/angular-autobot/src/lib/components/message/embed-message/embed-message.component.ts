@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Message } from '../../../models';
+import {DomSanitizer,SafeResourceUrl,} from '@angular/platform-browser';
 
 @Component({
   selector: 'lib-embed-message',
@@ -9,9 +10,11 @@ import { Message } from '../../../models';
 export class EmbedMessageComponent implements OnInit {
 
   @Input() msg: Message;
-  constructor() { }
+  url: SafeResourceUrl;
+  constructor(public sanitizer:DomSanitizer) { }
 
   ngOnInit() {
+    this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.msg.content);      
   }
 
 }

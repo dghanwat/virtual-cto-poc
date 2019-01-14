@@ -8167,3 +8167,27 @@ Error: Route.post() requires a callback function but got a [object Undefined]
 [INFO] - [2019-01-12T14:31:18.455Z] : RabbitMq: Connection virtualctorabbitmq opened
 [INFO] - [2019-01-12T14:31:26.093Z] : RabbitMq: Portal connected
 [INFO] - [2019-01-12T14:31:26.100Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T03:23:30.394Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-14T03:23:30.398Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T03:23:39.649Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-14T03:23:39.653Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T03:32:58.284Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-14T03:32:58.284Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-14T04:45:21.817Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-14T04:45:21.821Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T04:45:32.326Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-14T04:45:32.331Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T05:03:48.613Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-14T05:03:48.614Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-14T05:04:12.978Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-14T05:04:12.985Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T05:04:23.260Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-14T05:04:23.265Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T05:05:50.544Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-14T05:05:50.545Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-14T05:06:13.881Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-14T05:06:13.885Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T05:06:23.988Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-14T05:06:23.994Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-14T10:51:36.135Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-14T10:51:36.139Z] : RabbitMq: Connection virtualctorabbitmq closed

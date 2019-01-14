@@ -113,6 +113,6 @@ class Training:
         plt.legend()
         plt.savefig(__location__ + "fig.png")
 
-        model.save(__location__ + '\\model_ChatBot.h5')
-        with open(__location__ + '\\vars.pkl', 'wb') as f:
+        model.save(__location__ + '//model_ChatBot.h5')
+        with open(__location__ + '//vars.pkl', 'wb') as f:
             dump([words, classes, self.ignored, kbItems], f)

@@ -24,13 +24,13 @@ class Predict:
         print("[INFO] Loading Model from disk")
         
         print("Location",__location__)
-        self.model = load_model(__location__ + '\\model_ChatBot.h5')
-        with open(__location__ + '\\vars.pkl', 'rb') as f:
+        self.model = load_model(__location__ + '/model_ChatBot.h5')
+        with open(__location__ + '/vars.pkl', 'rb') as f:
             self.vocabulary, self.classes, self.ignored, self.kbItems = load(f)
             self.intentsDict = {i['intent']: i['responses'] for i in self.kbItems['kbItems']}
 
     def __init__(self):
-        self.init()
+        print("In constructor")
 
     def loadModel(self):
         self.init()

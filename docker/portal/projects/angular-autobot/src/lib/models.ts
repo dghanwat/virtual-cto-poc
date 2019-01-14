@@ -8,6 +8,7 @@ export interface Message {
   created_date: Date;
   freeze?: boolean;
   freezeUntilLoad?: boolean;
+  showFeedBackIcons?:boolean
 }
 
 export interface Action {
