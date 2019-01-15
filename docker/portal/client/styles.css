@@ -3,4 +3,20 @@
 /* @import "assets/styles/botui.min.css"; */
 @import '~perfect-scrollbar/css/perfect-scrollbar.css';
 
+lib-ngx-tree-children .tree-child {
+    width: 800px !important;
+}
+
+.tree-title {
+    font-size: 18px !important;
+}
+
+.d-inline-flex {
+    width: 800px !important;
+}
+.input-rename {
+    font-size: 14px !important;
+    max-width: 600px !important;
+    width: 600px !important
+}
 

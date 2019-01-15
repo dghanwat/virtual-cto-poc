@@ -5,12 +5,14 @@ import { HomeComponent } from './home/home.component';
 import { HumanComponent } from './human/human.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { QnAComponent } from './training/qna/qna.component';
+import { ManageKBComponent } from './kbmanagement/managekb.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'training/qna', component: QnAComponent},
   { path: 'human', component: HumanComponent},
+  { path: 'managekb', component:ManageKBComponent},
   // { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
   { path: 'notfound', component: NotFoundComponent },
   { path: '**', redirectTo: '/notfound' },

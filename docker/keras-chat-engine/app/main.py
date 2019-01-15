@@ -13,10 +13,10 @@ from analytics.chatbasepublisher import ChatBasePublisher
 publisher = Publisher()
 chatbasepublisher = ChatBasePublisher()
 
-
+ERROR_THRESHOLD = 0.70
 training = Training()
-predict = Predict()
-ERROR_THRESHOLD = 0.75
+predict = Predict(ERROR_THRESHOLD)
+
 
 def processTraining():
     mongoDBDAO = MongoDBDAO()
@@ -30,6 +30,11 @@ def processTraining():
     else:
         print("[INFO] No KB to train")
 
+def getAllKBItems(correlation_id):
+    mongoDBDAO = MongoDBDAO()
+    kbItems = mongoDBDAO.selectAllKBItems()
+    publisher.publish(kbItems, correlation_id)
+
 def handleRabbitMQMessage(ch, method, properties, body):
     print(" [x] %r" % body)
     incomingMessage = json.loads(body)
@@ -37,20 +42,29 @@ def handleRabbitMQMessage(ch, method, properties, body):
     print("Properties %r" % properties.correlation_id )
     if incomingMessage["messageType"] == "train":
         processTraining()
+    elif incomingMessage["messageType"] == "get_all_kb":
+        getAllKBItems(properties.correlation_id)
     elif incomingMessage["messageType"] == "chat":
         try:
             (chatResponse,confidence,intent) = predict.predict(incomingMessage["message"])
             if confidence >= ERROR_THRESHOLD:
                 json_response = json.dumps({'response': {"text": chatResponse, "in_response_to": [], "extra_data": {},"intent":intent}, 'confidence': confidence.item()})
-                chatbasepublisher.publish(incomingMessage["message"],chatResponse,False,incomingMessage["userId"],intent)
+                try:
+                    chatbasepublisher.publish(incomingMessage["message"],chatResponse,False,incomingMessage["userId"],intent)
+                except Exception as e1:
+                    print("[ERROR] error in publishing to Chatbase" , e1)
                 print("******************Eveything done")
             else: 
-                json_response = json.dumps({'response': {"text": chatResponse, "in_response_to": [], "extra_data": {},"intent":intent}, 'confidence': 0})
+                json_response = json.dumps({'response': {"text": chatResponse, "in_response_to": [], "extra_data": {},"intent":intent}, 'confidence': confidence.item()})
                 notifyMessage = '{"messageType":"notify_via_gmail","query":"'+incomingMessage["message"]+'"}'
                 publisher.publishNotifyMessage(notifyMessage, '')
-                chatbasepublisher.publish(incomingMessage["message"],chatResponse,True,incomingMessage["userId"],"FAQ")
+                try:
+                    chatbasepublisher.publish(incomingMessage["message"],chatResponse,True,incomingMessage["userId"],"FAQ")
+                except Exception as e2:
+                    print("[ERROR] error in publishing to Chatbase" , e2)
                 print("*********************Eveything done")
-        except:
+        except Exception as e:
+            print("[ERROR]" , e)
             json_response = json.dumps({'response': {"text": "Something went Wrong in Bot engine", "in_response_to": [], "extra_data": {},"intent":intent}, 'confidence': confidence.item()})
        
         publisher.publish(json_response, properties.correlation_id)

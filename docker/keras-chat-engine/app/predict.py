@@ -15,7 +15,6 @@ import os
 
 # create a data structure to hold user context
 context = {}
-ERROR_THRESHOLD = 0.75
 DEFAULT_RESPONSE = 'I am sorry, but I am not aware of this. I am still learning.'
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 class Predict:
@@ -29,8 +28,9 @@ class Predict:
             self.vocabulary, self.classes, self.ignored, self.kbItems = load(f)
             self.intentsDict = {i['intent']: i['responses'] for i in self.kbItems['kbItems']}
 
-    def __init__(self):
+    def __init__(self,errorThreshold):
         print("In constructor")
+        self.errorThreshold = errorThreshold
 
     def loadModel(self):
         self.init()
@@ -51,7 +51,7 @@ class Predict:
         print("Mapped to Intent" , self.classes[idx])
         print("Prediction Probablity", self.model.predict(queryBag)[0][idx])
         confidence = round(self.model.predict(queryBag)[0][idx], 2)
-        if self.model.predict(queryBag)[0][idx] >= ERROR_THRESHOLD:
+        if self.model.predict(queryBag)[0][idx] >= self.errorThreshold:
             print(choice(self.intentsDict[self.classes[idx]]))
             return (choice(self.intentsDict[self.classes[idx]]),confidence,self.classes[idx])
         else:

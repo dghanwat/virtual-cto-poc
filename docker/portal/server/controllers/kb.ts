@@ -4,7 +4,7 @@ import { RabbitMQ } from '../rabbitmq/rabbitmq';
 import { rabbitConfig } from "../rabbitmq/config";
 const OUTGOING_EXCHANGE = "bot_request_exchange";
 
-export default class ChatCtrl {
+export default class KBCtrl {
 
     rabbitMQ: RabbitMQ;
 
@@ -12,27 +12,15 @@ export default class ChatCtrl {
         this.rabbitMQ = rabbitMQ;
     }
 
-
-    chat = (req, res) => {
-        console.log('Request for chat', req.body);
+    getAllKBItems = (req, res) => {
+        console.log('Request for KB Item', req.body);
         let input = {
-            "messageType": "chat",
-            "message": req.body.message,
-            "userId":req.body.userId
+            "messageType": "get_all_kb"
         }
         let id = this.randomid();
         this.rabbitMQ.eventEmitter.once(id, msg => {
-            console.log("Message in the queue is ", msg)
-            let chatResponse: ChatResponse = new ChatResponse();
-            chatResponse.type = CHAT_RESPONSE_TYPES.TEXT;
-            
-            if (msg.response.text) {
-                chatResponse.content = msg.response.text;
-                chatResponse.confidence = msg.confidence
-            }
-            console.log('msg.response.text', chatResponse);
             res.setHeader('Content-Type', 'application/json');
-            res.status(200).send({ message: chatResponse })
+            res.status(200).send({ message: msg })
 
         });
 
@@ -44,11 +32,7 @@ export default class ChatCtrl {
 
     }
 
-    testGet= (req, res) => {
-        console.log("inside Test get")
-    }
-
-    //Random id generator
+   //Random id generator
     randomid() {
         return new Date().getTime().toString() + Math.random().toString() + Math.random().toString();
     }

@@ -18,8 +18,9 @@ import json
 from pickle import dump
 import os
 
+random.seed(42)
 
-EPOCHS = 1000
+EPOCHS = 700
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 class Training:
 
@@ -92,9 +93,9 @@ class Training:
         train_y = list(training[:,1])
 
         model = Sequential()
-        model.add(Dense(8, input_shape=[len(train_x[0],)]))
-        model.add(Dense(8))
-        model.add(Dense(8))
+        model.add(Dense(64, input_shape=[len(train_x[0],)]))
+        model.add(Dense(32))
+        model.add(Dense(16))
         model.add(Dense(len(train_y[0]), activation='softmax'))
         print("INFO training network")
         model.summary()

@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   BOT: string = "BOT";
   HUMAN: string = "HUMAN";
   asyncMesgId: any;
-  THRESHOLD: number = 0.75;
+  THRESHOLD: number = 0.70;
   userId: string;
 
   constructor(private botService: AngularAutobotService,

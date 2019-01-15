@@ -23,7 +23,8 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
-              "client/styles.css"
+              "client/styles.css",
+              "node_modules/ngx-tree-dnd/styles-tree-dnd.css" 
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

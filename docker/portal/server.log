@@ -8191,3 +8191,124 @@ Error: Route.post() requires a callback function but got a [object Undefined]
 [INFO] - [2019-01-14T05:06:23.994Z] : RabbitMq: Connection virtualctorabbitmq opened
 [INFO] - [2019-01-14T10:51:36.135Z] : RabbitMq: Connection virtualctorabbitmq closed
 [INFO] - [2019-01-14T10:51:36.139Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-15T04:22:33.966Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T04:22:33.971Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T04:22:41.944Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T04:22:41.949Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:30:00.316Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:30:00.320Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:30:10.531Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:30:10.535Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:48:14.310Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:48:14.315Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:50:08.307Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:50:08.314Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:50:13.270Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:50:13.276Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:50:56.919Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:50:56.923Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:51:46.268Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:51:46.270Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:56:27.402Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-15T05:56:27.404Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-15T05:56:52.696Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:56:52.728Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T05:57:03.272Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T05:57:03.276Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:00:35.318Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:00:35.321Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:03:07.260Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:03:07.263Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:07:12.242Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:07:12.244Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:10:45.512Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:10:45.517Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:10:49.325Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:10:49.331Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:10:55.845Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:10:55.849Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:11:15.024Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:11:15.028Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:11:17.595Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:11:17.599Z] : RabbitMq: Connection virtualctorabbitmq opened
+[ERROR] - [2019-01-15T06:11:28.247Z] : uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.(anonymous function) [as get] (C:\Reference\AWL\AgileUnit\virtual-cto\virtual-cto-poc\docker\portal\node_modules\express\lib\router\route.js:202:15)
+    at Object.setRoutes [as default] (C:\Reference\AWL\AgileUnit\virtual-cto\virtual-cto-poc\docker\portal\dist\server\routes.js:24:30)
+    at Server.<anonymous> (C:\Reference\AWL\AgileUnit\virtual-cto\virtual-cto-poc\docker\portal\dist\server\app.js:54:21)
+    at Object.onceWrapper (events.js:255:19)
+    at Server.emit (events.js:165:20)
+    at emitListeningNT (net.js:1394:10)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+    at Function.Module.runMain (module.js:703:11)
+    at startup (bootstrap_node.js:190:16)
+    at bootstrap_node.js:662:3
+[INFO] - [2019-01-15T06:11:28.279Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:11:28.279Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:11:53.032Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:11:53.034Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:12:39.480Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:12:39.483Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:12:54.055Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-15T06:12:54.056Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-15T06:13:17.813Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:13:17.818Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:13:32.046Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:13:32.051Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:16:57.176Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:16:57.178Z] : RabbitMq: Connection virtualctorabbitmq opened
+[ERROR] - [2019-01-15T06:17:00.795Z] : uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.(anonymous function) [as get] (C:\Reference\AWL\AgileUnit\virtual-cto\virtual-cto-poc\docker\portal\node_modules\express\lib\router\route.js:202:15)
+    at Object.setRoutes [as default] (C:\Reference\AWL\AgileUnit\virtual-cto\virtual-cto-poc\docker\portal\dist\server\routes.js:26:27)
+    at Server.<anonymous> (C:\Reference\AWL\AgileUnit\virtual-cto\virtual-cto-poc\docker\portal\dist\server\app.js:54:21)
+    at Object.onceWrapper (events.js:255:19)
+    at Server.emit (events.js:165:20)
+    at emitListeningNT (net.js:1394:10)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+    at Function.Module.runMain (module.js:703:11)
+    at startup (bootstrap_node.js:190:16)
+    at bootstrap_node.js:662:3
+[INFO] - [2019-01-15T06:17:00.823Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:17:00.825Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:17:29.023Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:17:29.026Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:21:04.463Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:21:04.466Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:21:43.416Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:21:43.418Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:23:15.097Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:23:15.102Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:23:27.644Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:23:27.648Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:25:09.855Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:25:09.860Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:26:02.520Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:26:02.523Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T06:27:38.091Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T06:27:38.093Z] : RabbitMq: Connection virtualctorabbitmq opened
+[ERROR] - [2019-01-15T08:49:47.112Z] : RabbitMq: Connection failed. Trying again -- 1
+[INFO] - [2019-01-15T08:49:47.138Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T08:49:47.139Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T08:49:47.139Z] : RabbitMq: Connection Queue already exists
+[ERROR] - [2019-01-15T08:49:47.177Z] : RabbitMq: Connection virtualctorabbitmq failed
+[ERROR] - [2019-01-15T11:02:06.069Z] : uncaughtException: rabbitmq_1.RabbitMQ is not a constructor
+TypeError: rabbitmq_1.RabbitMQ is not a constructor
+    at Server.<anonymous> (C:\Reference\AWL\AgileUnit\virtual-cto\virtual-cto-poc\docker\portal\dist\server\app.js:52:20)
+    at Object.onceWrapper (events.js:255:19)
+    at Server.emit (events.js:165:20)
+    at emitListeningNT (net.js:1394:10)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+    at Function.Module.runMain (module.js:703:11)
+    at startup (bootstrap_node.js:190:16)
+    at bootstrap_node.js:662:3
+[INFO] - [2019-01-15T11:02:55.266Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T11:02:55.276Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T11:03:04.846Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T11:03:04.849Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T11:25:58.075Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-15T11:25:58.076Z] : RabbitMq: Connection virtualctorabbitmq closed
+[INFO] - [2019-01-15T11:36:38.878Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T11:36:38.882Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T11:36:49.292Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T11:36:49.297Z] : RabbitMq: Connection virtualctorabbitmq opened

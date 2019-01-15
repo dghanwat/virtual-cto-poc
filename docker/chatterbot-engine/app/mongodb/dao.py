@@ -57,6 +57,9 @@ class MongoDBDAO:
            if "bot_database" in dblist:
                 print("The database exists.")
                 self.client.drop_database("bot_database")
+           if "knowledge_base" in dblist:
+                print("The database exists.")
+                self.client.drop_database("knowledge_base") 
         except Exception as e:
             print(repr(e))
             traceback.print_exc()

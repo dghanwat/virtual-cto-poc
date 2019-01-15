@@ -53,6 +53,7 @@
     "ngx-datatable": "^1.0.3",
     "ngx-logger": "^3.1.0",
     "ngx-perfect-scrollbar": "^6.3.1",
+    "ngx-tree-dnd": "^2.4.3",
     "node-json-db": "^0.9.1",
     "popper.js": "^1.14.3",
     "rabbot": "^2.1.0",

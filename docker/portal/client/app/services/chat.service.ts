@@ -19,6 +19,11 @@ export class ChatService {
     return this.http.post('/api/chat', message);
   }
 
+  getAllKbItems(): Observable<any> {
+    console.log("In getAllKbItems")
+    return this.http.post('/api/kbItems',{});
+  }
+
   
 
 }

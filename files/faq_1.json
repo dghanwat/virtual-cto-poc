@@ -1,0 +1,79 @@
+{
+    "messageType": "create_kb_item",
+    "kbItems": [
+      {
+        "intent": "automation_need",
+        "patterns": [
+          "What is the need of Automation and Orchestration",
+          "Why do we need automation",
+          "what are the advantages of automation",
+          "what are benefits of automation"
+        ],
+        "responses": [
+          "Automation and Orchestration are employed to deliver the business goals of increasing QUALITY, PACE and PRODUCTIVITY. By automation and orchestration we can ensure the repeat-ability of processes ensuring that quality is consistent. It also frees up people from doing low value tasks to be able to spend their time of high-value delivery. It also improves the efficiency of process so that the process lifecycle is shorter"
+        ]
+      },
+      {
+        "intent": "automation_areas",
+        "patterns": [
+          "Which are the areas where automation is applied",
+          "where can automation be applied",
+          "what is the application of automation"
+        ],
+        "responses": [
+          "Business Driven Development (BDD), Test Driven Development (TDD), The Continuous Integration & Deplyment (CI/CD) pipelines, Infrastructure as Code (IaC)."
+        ]
+      },
+      {
+        "intent": "bdd_info",
+        "patterns": [
+          "What is full form of BDD",
+          "Which tools comes under BDD",
+          "what are the techniques for BDD"
+        ],
+        "responses": [
+          "Business Driven Development (BDD) - all code that is written is supported buy an automation test (QA Automation) so that the system can be tested from a business case/use case perspective.The tooling of Selenium, Cucumber & Gherkin support the BDD process"
+        ]
+      },
+      {
+        "intent": "api_business_services",
+        "patterns": [
+          "what is purpose of business services through APIs",
+          "why do we need to expose services as API",
+          "what are the benefits of API",
+          "why do we need APIs"
+        ],
+        "responses": [
+          "The creation of business services through API's, this makes the front end of our solutions thinner and focused on UI/UX (display) principles in the main. We may or may not want to create the front end and focus a business strategy on selling the API layer (and offer the end clients the ability to develop their branded UI to our API's) on a transactional basis."
+        ]
+      },
+      {
+        "intent": "primary_dev_to_del_approach",
+        "patterns": [
+          "What is the Primary approach for development to delivery",
+          "what is approach for delivery",
+          "what is our delivery approach",
+          "How do we deliver our developed code",
+          "Do we use cloud for our delivery?",
+          "what should we do for our delivery"
+        ],
+        "responses": [
+          "We have pushed harder into Cloud than any other group in Worldline and the wider Atos family, to this end we are recognised as the go to people in Cloud and its supporting tooling. It is our primary appproach for development from development to delivery. Key Principle is Cloud."
+        ]
+      },
+      {
+        "intent": "dev_languages",
+        "patterns": [
+          "Languages focused by wordline",
+          "what technical language do we use for our development",
+          "which language do we develop software",
+          "what is our preferred language of development",
+          "Which language do we write code in",
+          "Are there any guidelines for choosing language of development"
+        ],
+        "responses": [
+          "One of the key debates that has raged since Worldline was IPO'd from Atos has been development languages and specifically which we focus on. Worldline on a global basis is focused on Java with the majority of the tooling, skills and expertise focused on Java. The UK is and always has been much different with more solutions in .Net flavours than Java and plenty of VB and other older technologies still in place. so whilst the answer is simple that we have to accommodate both .Net and Java and also focus on emerging languages such as Scala development isn't just limited to core business logic languages. Therefore the strategy takes into account the need to focus on languages for presentation, mobile, automation and data science."
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,14 @@
+.tree-title .draggable-item {
+    font-size: 20px !important;
+}
+
+lib-ngx-tree-children .tree-child {
+    width: 800px !important;
+}
+
+.d-inline-flex {
+    width: 800px !important;
+}
+.input-rename {
+    font-size: 12px !important;
+}

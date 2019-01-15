@@ -3,6 +3,7 @@ import * as cors from "cors";
 
 import ChatCtrl from './controllers/chat';
 import TrainingCtrl from './controllers/training';
+import KBCtrl from './controllers/kb';
 
 
 export default function setRoutes(app,rabbitmq) {
@@ -22,12 +23,13 @@ export default function setRoutes(app,rabbitmq) {
 
   const chatCtrl = new ChatCtrl(rabbitmq);
   const trainingCtrl = new TrainingCtrl(rabbitmq)
+  const kbCtrl = new KBCtrl(rabbitmq)
 
   //Chat
   router.route('/chat').post(chatCtrl.chat);
+  router.route('/kbItems').post(kbCtrl.getAllKBItems);
   router.route('/training/data/qna').put(trainingCtrl.appendQuestionAndAnswersSet);
-  
-  
+    
   
 
   app.use('/api', router);

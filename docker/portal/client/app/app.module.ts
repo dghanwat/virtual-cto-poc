@@ -22,6 +22,7 @@ import {AngularAutobotModule} from 'angular-autobot';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HumanComponent } from './human/human.component';
+import { ManageKBComponent } from './kbmanagement/managekb.component';
 import { QnAComponent } from './training/qna/qna.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
@@ -30,6 +31,7 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { ChatService } from './services/chat.service';
 import { TrainingService } from './services/training.service';
 import { from } from 'rxjs';
+import { NgxTreeDndModule } from 'ngx-tree-dnd';
 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -46,7 +48,8 @@ export function tokenGetter() {
     HomeComponent,
     NotFoundComponent,
     QnAComponent,
-    HumanComponent
+    HumanComponent,
+    ManageKBComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -67,7 +70,8 @@ export function tokenGetter() {
     }),
     AngularAutobotModule,
     PerfectScrollbarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxTreeDndModule
   ],
   providers: [
     UserService,
