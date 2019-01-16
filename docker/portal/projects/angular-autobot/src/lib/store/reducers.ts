@@ -175,7 +175,7 @@ export const selectBotById_messagesLatest = botId =>
   createSelector(selectBotById_messagesList(botId), sortedMessages => sortedMessages.slice(-1)[0]);
 
 export const selectGlobalSettings = createSelector(selectAutobotState, (state: AutobotState) => {
-  console.log('in selectglobalsettings', state);
+  // console.log('in selectglobalsettings', state);
   return state.globalSettings;
 });
 
@@ -186,12 +186,12 @@ export const isBotFrozen = botId =>
     selectBotById_messagesLatest(botId),
     (settings, action: AutobotModels.Action, latestMessage: Message) => {
       // console.log(botId, settings, action, latestMessage);
-      console.log(
-        botId,
-        settings,
-        (<any>(action || {})).autobotOpts,
-        (<any>(latestMessage || {})).freeze
-      );
+      // console.log(
+      //   botId,
+      //   settings,
+      //   (<any>(action || {})).autobotOpts,
+      //   (<any>(latestMessage || {})).freeze
+      // );
 
       return (
         (<any>(settings || {})).freeze ||

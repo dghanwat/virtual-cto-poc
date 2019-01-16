@@ -8312,3 +8312,11 @@ TypeError: rabbitmq_1.RabbitMQ is not a constructor
 [INFO] - [2019-01-15T11:36:38.882Z] : RabbitMq: Connection virtualctorabbitmq opened
 [INFO] - [2019-01-15T11:36:49.292Z] : RabbitMq: Portal connected
 [INFO] - [2019-01-15T11:36:49.297Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T13:28:31.970Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T13:28:31.975Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-15T13:28:41.927Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-15T13:28:41.931Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-16T03:42:23.539Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-16T03:42:23.545Z] : RabbitMq: Connection virtualctorabbitmq opened
+[INFO] - [2019-01-16T03:42:33.759Z] : RabbitMq: Portal connected
+[INFO] - [2019-01-16T03:42:33.762Z] : RabbitMq: Connection virtualctorabbitmq opened

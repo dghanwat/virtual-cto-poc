@@ -59,7 +59,7 @@ def handleRabbitMQMessage(ch, method, properties, body):
                 notifyMessage = '{"messageType":"notify_via_gmail","query":"'+incomingMessage["message"]+'"}'
                 publisher.publishNotifyMessage(notifyMessage, '')
                 try:
-                    chatbasepublisher.publish(incomingMessage["message"],chatResponse,True,incomingMessage["userId"],"FAQ")
+                    chatbasepublisher.publish(incomingMessage["message"],chatResponse,True,incomingMessage["userId"],intent)
                 except Exception as e2:
                     print("[ERROR] error in publishing to Chatbase" , e2)
                 print("*********************Eveything done")
